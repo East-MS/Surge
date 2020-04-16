@@ -1,0 +1,39 @@
+#!name=日常签到
+#!desc=东子
+#!system=ios
+
+[Script]
+#> 京东签到（登录https://bean.m.jd.com 点击签到）
+JD_DailyBonus = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+JD_DailyBonus = type=cron,cronexp="3 0 * * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+#> 爱奇艺签到（打开软件点击“我的”）
+iQIYI_GetCookie = type=http-request,pattern=https?:\/\/.*\.iqiyi\.com\/.*authcookie=,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_GetCookie.js
+iQIYI_DailyBonus = type=cron,cronexp="9 0 * * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_DailyBonus.js
+
+#> 美团签到（打开软件手动签到）
+meituan.js = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
+meituan.cookie.js = type=http-request,pattern=^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js,script-update-interval=0
+
+#> 哔哩哔哩签到（浏览器首先登陆，再访问: https://www.bilibili.com 或 https://live.bilibili.com）
+bilibili.js = type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-update-interval=0
+bilibili.cookie.js = type=http-request,pattern=^https:\/\/(www|live)\.bilibili\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js,script-update-interval=0
+
+#> 腾讯视频签到（浏览器访问: https://film.qq.com/）
+videoqq.js = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
+videoqq.cookie.js = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js,script-update-interval=0
+
+#> 网易云签到（登录后使用浏览器访问: https://music.163.com/）
+neteasemusic.js = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,script-update-interval=0
+neteasemusic.cookie.js = type=http-request,pattern=^https?:\/\/music\.163\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,script-update-interval=0
+
+#> 微信活动抽奖（活动抽奖点击签到）
+WeChatLottery_new.js = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js,script-update-interval=0
+WeChatLottery_new.js = type=http-request,pattern=^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js,script-update-interval=0
+
+#> 微信来客有礼
+lkyl.js = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js
+lkyl.js = type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/turncard\/sign\?,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, *.iqiyi.com, i.meituan.com, *.bilibili.com, *.video.qq.com, music.163.com, api-hdcj.9w9.com, draw.jdfcloud.com
