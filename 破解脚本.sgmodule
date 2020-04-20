@@ -110,14 +110,5 @@ Mimo内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserconten
 #> Pdfexpert
 Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$)
 
-#> Unlock Many App
-解锁App = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js
-
-# Fit健身会员
-Fit健身 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/fit.js,type=http-response,pattern=^https:\/\/bea\.sportq\.com\/SFitWeb\/sfit\/getUserBaseInfo
-
-#> all apps monkey
-Monkey = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/monkey.js,script-update-interval=0,type=http-response,pattern=^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update
-
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, storage.wax.weibo.com, *.amemv.com, *.snssdk.com, mp.weixin.qq.com, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, api.zhihu.com, www.zhihu.com, www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.gotokeep.com, ap*.intsig.net, api.gamer.com.tw, buy.itunes.apple.com, api.flexibits.com, api.sololearn.com, www.xmind.cn, *.grammarly.com, education.github.com, api.getmimo.com, license.pdfexpert.com, bea.sportq.com, www.api.monkeyuni.net
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, storage.wax.weibo.com, *.amemv.com, *.snssdk.com, mp.weixin.qq.com, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, api.zhihu.com, www.zhihu.com, www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.gotokeep.com, ap*.intsig.net, api.gamer.com.tw, buy.itunes.apple.com, api.flexibits.com, api.sololearn.com, www.xmind.cn, *.grammarly.com, education.github.com, api.getmimo.com, license.pdfexpert.com
