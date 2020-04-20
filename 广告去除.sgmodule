@@ -5,6 +5,7 @@
 # Advertising 广告
 #> General
 DOMAIN-KEYWORD,adservice,REJECT
+
 DOMAIN-SUFFIX,adcolony.com,REJECT
 DOMAIN-SUFFIX,adinall.com,REJECT
 DOMAIN-SUFFIX,admaster.com.cn,REJECT
@@ -98,9 +99,9 @@ DOMAIN-SUFFIX,wedolook.com,REJECT
 DOMAIN-SUFFIX,xdrig.com,REJECT
 DOMAIN-SUFFIX,yumimobi.com,REJECT
 DOMAIN-SUFFIX,zu08e.cn,REJECT
-
 DOMAIN-SUFFIX,ad.cmvideo.cn,REJECT
 DOMAIN-SUFFIX,ad.daum.net,REJECT
+
 DOMAIN,abema-adx.ameba.jp,REJECT
 DOMAIN,ad.12306.cn,REJECT
 DOMAIN,ad.360in.com,REJECT
@@ -135,20 +136,20 @@ DOMAIN,mobileads.msn.com,REJECT
 DOMAIN,mopnativeadv.037201.com,REJECT
 DOMAIN,nativeadv.dftoutiao.com,REJECT
 
-#> Apple
+# > Apple
 DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
 DOMAIN-SUFFIX,ads.internal.unity3d.com,REJECT
 DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
 DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
-#> Alibaba
+# > Alibaba
 DOMAIN,tunion-api.m.taobao.com,REJECT
-#> AutoHome
+# > AutoHome
 DOMAIN,adproxy.autohome.com.cn,REJECT
 DOMAIN,rd.autohome.com.cn,REJECT
 DOMAIN,al.autohome.com.cn,REJECT
 DOMAIN,applogapi.autohome.com.cn,REJECT
 
-#> Baidu
+# > Baidu
 DOMAIN-SUFFIX,cpro.baidu.com,REJECT
 DOMAIN-SUFFIX,pos.baidu.com,REJECT
 DOMAIN,afd.baidu.com,REJECT
@@ -157,39 +158,39 @@ DOMAIN,duclick.baidu.com,REJECT
 DOMAIN,mobads.baidu.com,REJECT
 DOMAIN,mobads-logs.baidu.com,REJECT
 DOMAIN,nsclick.baidu.com,REJECT
-#> ByteDance
+# > ByteDance
 DOMAIN,ad.toutiao.com,REJECT
-#> BitAuto
+# > BitAuto
 DOMAIN,adx.yiche.com,REJECT
 DOMAIN,log.ycapp.yiche.com,REJECT
-#> Baicizhan
+# > Baicizhan
 DOMAIN,advertise.baicizhan.com,REJECT
 DOMAIN,advertise.baicizhan.org,REJECT
 
-#> CNTV
+# > CNTV
 DOMAIN,galaxy.bjcathay.com,REJECT
 DOMAIN,mdrecv.app.cntvwb.cn,REJECT
 DOMAIN,sdapprecv.app.cntvwb.cn,REJECT
 DOMAIN,vdapprecv.app.cntvwb.cn,REJECT
-#> ChinaTelecom
+# > ChinaTelecom
 DOMAIN,ad.21cn.com,REJECT
 DOMAIN,ad.k.21cn.com,REJECT
 DOMAIN,admarket.21cn.com,REJECT
 DOMAIN,adshows.21cn.com,REJECT
-#> Chelaile
+# > Chelaile
 DOMAIN,atrace.chelaile.net.cn,REJECT
 DOMAIN,logs.chelaile.net.cn,REJECT
 
-#> ele
+# > ele
 DOMAIN,log.star.ele.me,REJECT
 
-#> Google
+# > Google
 DOMAIN-SUFFIX,doubleclick.net,REJECT
 DOMAIN-SUFFIX,googleadservices.com,REJECT
 DOMAIN-SUFFIX,googleadsserving.cn,REJECT
 DOMAIN-SUFFIX,googlesyndication.com,REJECT
 
-#> HunanTV
+# > HunanTV
 DOMAIN-SUFFIX,da.mgtv.com,REJECT
 DOMAIN-SUFFIX,da.hunantv.com,REJECT
 # > Hupu
@@ -197,18 +198,18 @@ DOMAIN,adx.hupu.com,REJECT
 DOMAIN,adx-api.hupu.com,REJECT
 DOMAIN,goblin.hupu.com,REJECT
 
-#> iQiyi
+# > iQiyi
 DOMAIN,t7z.cupid.iqiyi.com,REJECT
 IP-CIDR,101.227.97.240/32,REJECT,no-resolve
 IP-CIDR,101.227.200.11/32,REJECT,no-resolve
 IP-CIDR,101.227.200.28/32,REJECT,no-resolve
 IP-CIDR,124.192.153.42/32,REJECT,no-resolve
-#> Ifeng
+# > Ifeng
 DOMAIN-SUFFIX,deliver.ifeng.com,REJECT
 DOMAIN,api.newad.ifeng.com,REJECT
 DOMAIN,ifengad.3g.ifeng.com,REJECT
 
-#> KuGou and Kuwo
+# > KuGou and Kuwo
 DOMAIN,adserviceretry.kugou.com,REJECT
 DOMAIN,ads.service.kugou.com,REJECT
 DOMAIN,adsfile.bssdlbig.kugou.com,REJECT
@@ -218,7 +219,7 @@ DOMAIN,kgmobilestatbak.kugou.com,REJECT
 DOMAIN,mobilelog.kugou.com,REJECT
 DOMAIN,mobilead.kuwo.cn,REJECT
 DOMAIN,rich.kuwo.cn,REJECT
-#> Kingsoft
+# > Kingsoft
 DOMAIN,ad-stat.ksosoft.com,REJECT
 DOMAIN,img.auction-ads.wpscdn.cn,REJECT
 DOMAIN,counter.kingsoft.com,REJECT
@@ -228,31 +229,31 @@ DOMAIN,mobad.ijinshan.com,REJECT
 DOMAIN,ups.ksmobile.net,REJECT
 DOMAIN,ws.ksmobile.net,REJECT
 
-#> Le
+# > Le
 DOMAIN-SUFFIX,webp2p.letv.com,REJECT
 DOMAIN,ark.letv.com,REJECT
 DOMAIN,emma-414870e223.huodonghezi.com,REJECT
 DOMAIN,g3.letv.com,REJECT
 DOMAIN,n.mark.letv.com,REJECT
-#> 乐播投屏
+# > 乐播投屏
 DOMAIN,ad.hpplay.cn,REJECT
 DOMAIN,adcdn.hpplay.cn,REJECT
 DOMAIN,adeng.hpplay.cn,REJECT
 DOMAIN,rp.hpplay.cn,REJECT
 
-#> MI
+# > MI
 DOMAIN-SUFFIX,ad.intl.xiaomi.com,REJECT
 DOMAIN-SUFFIX,ad.xiaomi.com,REJECT
 DOMAIN-SUFFIX,admob.xiaomi.com,REJECT
 DOMAIN,adv.sec.intl.miui.com,REJECT
 DOMAIN,adv.sec.miui.com,REJECT
-#> Moji
+# > Moji
 DOMAIN,ad.api.moji.com,REJECT
 DOMAIN,adlaunch.moji.com,REJECT
 DOMAIN,ads.mojicdn.com,REJECT
 DOMAIN,v1.log.moji.com,REJECT
 
-#> NetEase
+# > NetEase
 DOMAIN,ad.bn.netease.com,REJECT
 DOMAIN,ad.yixin.im,REJECT
 DOMAIN,admusicpic.music.126.net,REJECT
@@ -269,26 +270,26 @@ DOMAIN,nex.163.com,REJECT
 DOMAIN,yt-adp.nosdn.127.net,REJECT
 DOMAIN,yt-adp.ws.126.net,REJECT
 
-#> PPTV
+# > PPTV
 DOMAIN,ads.aplus.pptv.com,REJECT
 DOMAIN,ads.aplusapi.pptv.com,REJECT
 DOMAIN,asimgs.pplive.cn,REJECT
 DOMAIN,de.as.pptv.com,REJECT
-#> Photoable
+# > Photoable
 DOMAIN,regist.fotoable.com,REJECT
 DOMAIN,cdn.adapi.fotoable.com,REJECT
-#> PeanutWiFiMpass
+# > PeanutWiFiMpass
 DOMAIN,adnew.wifi8.com,REJECT
 DOMAIN,adfile.wifi8.com,REJECT
 
-#> Sina
+# > Sina
 DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
 DOMAIN,adimg.vue.weibo.com,REJECT
 DOMAIN,u1.img.mobile.sina.cn,REJECT
 DOMAIN,sax.sina.com.cn,REJECT
 DOMAIN,saxs.sina.com.cn,REJECT
 DOMAIN,saxn.sina.com.cn,REJECT
-#> Sohu
+# > Sohu
 DOMAIN-SUFFIX,ad.sohu.com,REJECT
 DOMAIN-SUFFIX,ads.sohu.com,REJECT
 DOMAIN-SUFFIX,aty.sohu.com,REJECT
@@ -297,7 +298,7 @@ DOMAIN,v2.reachmax.cn,REJECT
 DOMAIN,track.sohu.com,REJECT
 DOMAIN,hui.sohu.com,REJECT
 
-#> Tencent
+# > Tencent
 DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
@@ -310,17 +311,17 @@ DOMAIN,splashqqlive.gtimg.com,REJECT
 DOMAIN,wa.gtimg.com,REJECT
 DOMAIN,wxsnsdy.wxs.qq.com,REJECT
 DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
-#> The Paper
+# > The Paper
 DOMAIN,admonitor.thepaper.cn,REJECT
 DOMAIN,adpai.thepaper.cn,REJECT
 DOMAIN,imgadpai.thepaper.cn,REJECT
-#> Thunder
+# > Thunder
 DOMAIN,adsp.xunlei.com,REJECT
 DOMAIN,etl.xlmc.sandai.net,REJECT
-#> 同花顺
+# > 同花顺
 DOMAIN,adm.10jqka.com.cn,REJECT
 DOMAIN,stat.10jqka.com.cn,REJECT
-#> 太平洋
+# > 太平洋
 DOMAIN,ad-analysis.pconline.com.cn,REJECT
 DOMAIN,iad0ssl.pcauto.com.cn,REJECT
 DOMAIN,iad0ssl.pconline.com.cn,REJECT
@@ -328,29 +329,29 @@ DOMAIN,imgad0.pcauto.com.cn,REJECT
 DOMAIN,imgad0.pconline.com.cn,REJECT
 DOMAIN,ivy.pchouse.com.cn,REJECT
 
-#> WiFi key
+# > WiFi key
 DOMAIN,a.wkanx.com,REJECT
 DOMAIN,cwx.lianwangtech.com,REJECT
 DOMAIN,c1wx.lianwangtech.com,REJECT
 
-#> 喜马拉雅
+# > 喜马拉雅
 DOMAIN,ad.ximalaya.com,REJECT
 DOMAIN,adbs.ximalaya.com,REJECT
 DOMAIN,adse.ximalaya.com,REJECT
 DOMAIN,adse.wsa.ximalaya.com,REJECT
 DOMAIN,adbehavior.wsa.ximalaya.com,REJECT
 DOMAIN,adsebs.ximalaya.com,REJECT
-#> 小红书
+# > 小红书
 DOMAIN,ads-img-qc.xhscdn.com,REJECT
 DOMAIN,ads-video-qc.xhscdn.com,REJECT
 DOMAIN,t-ads.xiaohongshu.com,REJECT
 
-#> Youku
+# > Youku
 DOMAIN-SUFFIX,atm.youku.com,REJECT
 DOMAIN,ad.mobile.youku.com,REJECT
 DOMAIN,iyes.youku.com,REJECT
 
-#> ZOL
+# > ZOL
 DOMAIN,apppv.zol.com.cn,REJECT
 DOMAIN,pvnapp.zol.com.cn,REJECT
 
@@ -468,7 +469,8 @@ IP-CIDR,39.107.15.115/32,REJECT,no-resolve
 IP-CIDR,47.89.59.182/32,REJECT,no-resolve
 IP-CIDR,103.49.209.27/32,REJECT,no-resolve
 IP-CIDR,123.56.152.96/32,REJECT,no-resolve
-#> ChinaTelecom
+
+# > ChinaTelecom
 IP-CIDR,61.160.200.223/32,REJECT,no-resolve
 IP-CIDR,61.160.200.242/32,REJECT,no-resolve
 IP-CIDR,61.160.200.252/32,REJECT,no-resolve
@@ -487,16 +489,16 @@ IP-CIDR,222.186.61.91/32,REJECT,no-resolve
 IP-CIDR,222.186.61.95/32,REJECT,no-resolve
 IP-CIDR,222.186.61.96/32,REJECT,no-resolve
 IP-CIDR,222.186.61.97/32,REJECT,no-resolve
-#> ChinaUnicom
+# > ChinaUnicom
 IP-CIDR,106.75.231.48/32,REJECT,no-resolve
 IP-CIDR,119.4.249.166/32,REJECT,no-resolve
 IP-CIDR,220.196.52.141/32,REJECT,no-resolve
 IP-CIDR,221.6.4.148/32,REJECT,no-resolve
-#> ChinaMobile
+# > ChinaMobile
 IP-CIDR,114.247.28.96/32,REJECT,no-resolve
 IP-CIDR,221.179.131.72/32,REJECT,no-resolve
 IP-CIDR,221.179.140.145/32,REJECT,no-resolve
-#> Dr.Peng
+# > Dr.Peng
 # IP-CIDR,10.72.25.0/24,REJECT,no-resolve
 IP-CIDR,115.182.16.79/32,REJECT,no-resolve
 IP-CIDR,118.144.88.126/32,REJECT,no-resolve
@@ -511,18 +513,18 @@ IP-CIDR,220.115.251.25/32,REJECT,no-resolve
 IP-CIDR,222.73.156.235/32,REJECT,no-resolve
 
 # Malware 恶意网站
-#> 快压
+# > 快压
 # https://zhuanlan.zhihu.com/p/39534279,REJECT
 DOMAIN-SUFFIX,kuaizip.com,REJECT
-#> MacKeeper
+# > MacKeeper
 # https://www.lizhi.io/blog/40002904,REJECT
 DOMAIN-SUFFIX,mackeeper.com,REJECT
 DOMAIN-SUFFIX,zryydi.com,REJECT
-#> Adobe Flash China Special Edition
+# > Adobe Flash China Special Edition
 # https://www.zhihu.com/question/281163698/answer/441388130,REJECT
 DOMAIN-SUFFIX,flash.cn,REJECT
 DOMAIN,geo2.adobe.com,REJECT
-#> C&J Marketing
+# > C&J Marketing
 # https://www.zhihu.com/question/46746200,REJECT
 DOMAIN-SUFFIX,4009997658.com,REJECT
 DOMAIN-SUFFIX,abbyychina.com,REJECT
