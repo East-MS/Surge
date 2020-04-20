@@ -4,28 +4,28 @@
 
 [Script]
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
-JD_DailyBonus.js = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+京东签到 = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
 #> 爱奇艺签到（打开软件点击“我的”）
-iQIYI_DailyBonus.js = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_DailyBonus.js,script-update-interval=0
+爱奇艺签到 = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_DailyBonus.js,script-update-interval=0
 
 #> 美团签到（打开软件手动签到）
-meituan.js = type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
+美团签到 = type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
 
 #> 哔哩哔哩签到（浏览器首先登陆，再访问: https://www.bilibili.com 或 https://live.bilibili.com）
-bilibili.js = type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-update-interval=0
+哔哩哔哩签到 = type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-update-interval=0
 
 #> 腾讯视频签到（浏览器访问: https://film.qq.com/）
-videoqq.js = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
+腾讯视频签到 = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
 
 #> 网易云签到（登录后使用浏览器访问: https://music.163.com/）
-neteasemusic.js = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js,script-update-interval=0
+网易云签到 = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js,script-update-interval=0
 
 #> 微信活动抽奖（活动抽奖点击签到）
-WeChatLottery_new.js = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
+活动抽奖签到 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
 
 #> 微信来客有礼
-lkyl.js = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js,script-update-interval=0
+来客有礼签到 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js,script-update-interval=0
 
 #> CSDN
-csdn.js = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js,script-update-interval=0
+CSDN签到 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js,script-update-interval=0
