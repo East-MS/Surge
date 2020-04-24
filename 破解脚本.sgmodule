@@ -2,33 +2,6 @@
 #!desc=东子
 #!system=ios
 
-[Rule]
-#> Youtube
-# URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
-# URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
-# URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
-# URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
-# URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
-# URL-REGEX,https?:\/\/m.youtube.com\/_get_ads,REJECT
-# URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
-# URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
-# URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
-# URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
-# URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
-#> Zhihu
-# USER-AGENT,AVOS*,REJECT-TINYGIF
-# URL-REGEX,https?://www.zhihu.com/api/v4/mcn/,REJECT
-# URL-REGEX,https?://api.zhihu.com/(ab|adx|xen|club|fringe|zst|commercial|ad-style-service|market/popover|search/(top|tab|preset)|.*(guide|recommendations|extended|featured-comment-ad)),REJECT
-# AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT-TINYGIF
-#> bilibili
-URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
-URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
-AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFFIX,hdslb.com)))),REJECT
-
-[URL Rewrite]
-#> Aweme
-# ^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
-
 [Script]
 #> yichahucha
 #> 京东比价
@@ -38,26 +11,8 @@ AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFF
 淘宝比价 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,type=http-request,pattern=^http://.+/amdc/mobileDispatch
 淘宝比价 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail
 
-#> 奈飞评分
-# Netflix评分 = script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-# Netflix评分 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-
-#> Choler
-#> 抖音去广告
-# 抖音广告 = script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-request,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
-# 抖音广告 = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-response,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v1.*\/(feed|post)
-
 #> 微信公众号
 微信公众号 = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
-
-#> YouTube
-# YouTube广告 = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
-
-#> 知乎去广告
-# 知乎feed = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js,type=http-response,pattern=https://api.zhihu.com/moments/recommend
-# 知乎recommend = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js,type=http-response,pattern=https://api.zhihu.com/topstory/recommend
-# 知乎answer = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js,type=http-response,pattern=https://api.zhihu.com/v4/questions
-# 知乎people = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js,type=http-response,pattern=https://api.zhihu.com/people/
 
 #> 哔哩哔哩精简及去广告
 哔哩哔哩space = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js,type=http-response,pattern=https://app.bilibili.com/x/v2/space\?access_key
@@ -104,4 +59,4 @@ Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserc
 # Ulysses内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulysses.js, script-update-interval=0,type=http-response, pattern=^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, *.amemv.com, *.snssdk.com, mp.weixin.qq.com, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, api.zhihu.com, www.zhihu.com, www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.gotokeep.com, ap*.intsig.net, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, education.github.com, api.getmimo.com, license.pdfexpert.com, sk.ulysses.app
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, mp.weixin.qq.com, www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.gotokeep.com, ap*.intsig.net, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, education.github.com, api.getmimo.com, license.pdfexpert.com, sk.ulysses.app
