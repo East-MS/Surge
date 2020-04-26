@@ -22,7 +22,7 @@
 网易云cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,type=http-request,pattern=^https?:\/\/music\.163\.com\/?.?
 
 #> 微信活动抽奖（活动抽奖点击签到）
-活动抽奖Cookie = script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js,type=http-request,pattern=^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign
+活动抽奖Cookie = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/WeChatLottery_new.js,type=http-request,pattern=^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign
 
 #> 微信来客有礼
 来客有礼Cookie = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js,type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/turncard\/sign\?
