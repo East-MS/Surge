@@ -18,9 +18,6 @@
 #> 微信公众号
 微信公众号 = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 
-#> Keep解锁私人课程和动作库
-# Keep健身 = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js,type=http-response,pattern=^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic)
-
 #> 扫描全能王
 扫描全能王 = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
 
@@ -47,4 +44,4 @@ Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserc
 # Ulysses内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulysses.js, script-update-interval=0,type=http-response, pattern=^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, storage.wax.weibo.com, mp.weixin.qq.com, api.gotokeep.com, ap*.intsig.net, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, sk.ulysses.app
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, storage.wax.weibo.com, mp.weixin.qq.com, ap*.intsig.net, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, sk.ulysses.app
