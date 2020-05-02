@@ -12,20 +12,14 @@
 #> 饿了么（打开软件手动，我的左上角签到）
 饿了么 = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
 
-#> 哔哩哔哩签到（浏览器首先登陆，再访问: https://www.bilibili.com 或 https://live.bilibili.com）
-哔哩哔哩 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-update-interval=0
-
 #> 腾讯视频签到（浏览器访问: https://film.qq.com/）
-腾讯视频 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
-
-#> 网易云签到（登录后使用浏览器访问: https://music.163.com/）
-网易云 = type=cron,cronexp="6 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js
+腾讯视频 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
 
 #> 微信活动抽奖（活动抽奖点击签到）
-活动抽奖 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/WeChatLottery_new.js
+活动抽奖 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/WeChatLottery_new.js
 
 #> 微信来客有礼
-来客有礼 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js,script-update-interval=0
+来客有礼 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js,script-update-interval=0
 
 #> 美团
-美团 = type=cron,cronexp=9 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
+美团 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
