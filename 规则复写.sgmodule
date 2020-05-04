@@ -213,7 +213,7 @@
 ^https?:\/\/dl\.app\.gtja\.com\/operation\/config\/startupConfig\.json - reject
 ^https?:\/\/api\.laifeng\.com\/v1\/start\/ads - reject
 ^https?:\/\/.+\.pstatp\.com\/img\/ad - reject
-^https?:\/\/.+\.(snssdk|amemv)\.com\/api\/ad\/ - reject
+#^https?:\/\/.+\.(snssdk|amemv)\.com\/api\/ad\/ - reject
 ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ - reject
 ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ - reject
 ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ - reject
