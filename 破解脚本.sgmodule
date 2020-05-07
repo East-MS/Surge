@@ -47,4 +47,4 @@ Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserc
 Keep解锁 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js,type=http-response,pattern=^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic)
 
 [MITM]
-hostname = api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, storage.wax.weibo.com, mp.weixin.qq.com, ap*.intsig.net, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, sk.ulysses.app, api.gotokeep.com
+hostname = api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, mp.weixin.qq.com, ap*.intsig.net, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, sk.ulysses.app, api.gotokeep.com
