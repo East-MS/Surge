@@ -44,7 +44,7 @@ Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserc
 Productive = type=http-response,pattern=^https:\/\/subs\.platforms\.team\/.+\/apple\/verify$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/productive.js,script-update-interval=0
 
 #> Buyhack
- 验证收据 = requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
+验证收据 = requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
 
 [MITM]
 hostname = api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, mp.weixin.qq.com, ap*.intsig.net, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, sk.ulysses.app, subs.platforms.team
