@@ -16,23 +16,20 @@ JD618 = type=cron,cronexp="10,30,50 0,1 * * *",script-path=https://raw.githubuse
 #> 腾讯视频签到（浏览器访问: https://film.qq.com/）
 腾讯视频 = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
 
-#> 微信活动抽奖（活动抽奖点击签到）
-活动抽奖 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/WeChatLottery_new.js
-
 #> 微信来客有礼
-来客有礼 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js,script-update-interval=0
+来客有礼 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js,script-update-interval=0
 
 #> 美团
-美团 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
+美团 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
 
 #> 网易云音乐
-网易云音乐 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,script-update-interval=0
+网易云音乐 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,script-update-interval=0
 
 #>爱奇艺
-爱奇艺签到 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+爱奇艺签到 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 #> CSDN
-CSDN = type=cron,cronexp=9 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js,script-update-interval=0
+CSDN = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js,script-update-interval=0
 
 #> GitHub监控
 GitHub监控= type=cron,cronexp=0 8 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js
