@@ -31,8 +31,5 @@
 CSDN Cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js,type=http-request,pattern=^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken
 CSDN Cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js,type=http-request,pattern=^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\?
 
-#> 小木虫论坛
-小木虫论坛 = type=http-request,pattern=^https?:\/\/mapi.xmcimg.com\/bbs\/memcp.php\?action,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/muchong/muchong.js,requires-body=false
-
 [MITM]
-hostname = %APPEND% api.m.jd.com, h5.ele.me, *.video.qq.com, draw.jdfcloud.com, i.meituan.com, music.163.com, *.iqiyi.com, *.csdn.net, *.xmcimg.com
+hostname = %APPEND% api.m.jd.com, h5.ele.me, *.video.qq.com, draw.jdfcloud.com, i.meituan.com, music.163.com, *.iqiyi.com, *.csdn.net
