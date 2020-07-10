@@ -3,9 +3,6 @@
 
 [URL Rewrite]
 # 神机规则
-# Redirect Google Search Service
-^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 302
-
 # Redirect HTTP to HTTPS
 ^(http|https):\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
 ^(http|https):\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
