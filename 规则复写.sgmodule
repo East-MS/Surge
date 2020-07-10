@@ -444,7 +444,7 @@
 ^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/ - reject
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
 ^https?:\/\/.+\/client\/phpui2\/ - reject
-#^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
+^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
 ^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ - reject
 ^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
 ^https?:\/\/7n\.bczcdn\.com\/launchad\/ - reject
@@ -561,7 +561,7 @@
 ^https?:\/\/api\.21jingji\.com\/ad\/ - reject
 ^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo - reject
-#^https?:\/\/.+\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ - reject
+^https?:\/\/.+\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ - reject
 ^https?:\/\/channel\.beitaichufang\.com\/channel\/api\/v\d\/promote\/ios\/start\/page - reject
 ^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? - reject
 ^https?:\/\/status\.boohee\.com\/api\/v\d\/app_square\/start_up_with_ad - reject
