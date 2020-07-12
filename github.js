@@ -39,7 +39,7 @@ let repositories = [
     },
     {
         name: "NobyDa规则",
-        file_names: ["Surge/Module/RewriteRules.sgmodule"], //路径模板🌟
+        file_names: ["Surge/Module"], //路径模板🌟
         url: "https://github.com/NobyDa/Script/tree/master",
     },
 ];
