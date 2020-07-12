@@ -4,7 +4,7 @@
 
 [Script]
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
-京东 = type=cron,cronexp=0 */12 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+京东 = type=cron,cronexp=2 */12 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
 #> 京东农场
 京东农场= type=cron,cronexp=1 0 7,12,18 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jd_fruit.js,wake-system=true
