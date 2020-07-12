@@ -21,7 +21,7 @@ let token = "784a03feb07989d3339dfa41c7eb41777436cbfa";
 
 let repositories = [
     {
-        name: "NZW9314 脚本",
+        name: "NZW9314脚本",
         url: "https://github.com/nzw9314/QuantumultX/tree/master",
     },
     {
@@ -29,11 +29,11 @@ let repositories = [
         url: "https://github.com/Fndroid/clash_for_windows_pkg/releases",
     },
     {
-        name: "Chavy 脚本",
+        name: "Chavy脚本",
         url: "https://github.com/chavyleung/scripts",
     },
     {
-        name: "NobyDa",
+        name: "NobyDa签到",
         file_names: ["JD-DailyBonus/JD_DailyBonus.js", "52pojie-DailyBonus"], //路径模板🌟
         url: "https://github.com/NobyDa/Script/tree/master",
     },
