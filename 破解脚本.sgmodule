@@ -37,7 +37,7 @@ Mimo内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserconten
 Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$)
 
 #> 彩云天气
-彩云天气 = type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/Surge/master/Script/caiyun.js
+彩云天气 = type=http-response,pattern=^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/ColorWeather.js
 
 [MITM]
 hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, mp.weixin.qq.com, ap*.intsig.net, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, biz.caiyunapp.com
