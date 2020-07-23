@@ -3,6 +3,9 @@
 
 [URL Rewrite]
 # 神机规则
+# Redirect Google Search Service
+^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 302
+
 # Redirect HTTP to HTTPS
 ^(http|https):\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
 ^(http|https):\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
@@ -14,7 +17,6 @@
 # Redirect False to True
 # > IGN China to IGN Global
 ^(http|https):\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
-
 # > Fake Website Made By C&J Marketing
 ^(http|https):\/\/(www.)?abbyychina\.com\/ https://www.abbyy.cn/ 302
 ^(http|https):\/\/(www.)?bartender\.cc\/ https://www.macbartender.com/ 302
@@ -60,7 +62,7 @@
 ^(http|https):\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^(http|https):\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
 
-# NobyDa规则
+# Nobyda规则
 ^https?:\/\/interface\.music\.163\.com\/eapi\/ad - reject
 ^https?:\/\/iadmusicmat\.music.126.net\/.*jpg$ - reject
 ^https?:\/\/p\.c\.music\.126.net\/.*jpg$ - reject
