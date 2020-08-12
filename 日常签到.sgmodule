@@ -25,9 +25,6 @@
 #> 京东加速
 京东加速=type=cron,cronexp=8 */3 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js,wake-system=true
 
-#> 京东手机节
-京东818手机节 = type=cron,cronexp=1 0-18/6 * * *,wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_818.js
-
 #> 取关京东店铺商品
 取关京东店铺商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_unsubscribe.js
 
