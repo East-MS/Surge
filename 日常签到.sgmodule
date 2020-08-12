@@ -28,6 +28,9 @@
 #> 取关京东店铺商品
 取关京东店铺商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_unsubscribe.js
 
+#> 京东全民开红包
+京东全民开红包=type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_redPacket.js,wake-system=true
+
 #> 饿了么（打开软件手动，我的左上角签到）
 饿了么签到 = type=cron,cronexp=3 0 * * *,script-path= https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
 饿了么红包 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js,script-update-interval=0
