@@ -22,6 +22,7 @@
 #> 京东宠汪汪
 京东宠汪汪= type=cron,cronexp=15 1,2 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js,wake-system=true
 京东宠汪汪喂食= type=cron,cronexp=15 */1 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+宠汪汪偷好友积分与狗粮 = type=cron,cronexp=0 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js
 
 #> 京东种豆得豆
 京东种豆得豆= type=cron,cronexp=1 7-21/2 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_plantBean.js,wake-system=true
