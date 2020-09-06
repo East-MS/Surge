@@ -6,8 +6,8 @@
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
 京东 = type=cron,cronexp=1 */12 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
-#> 热8超级魔盒
-热8超级魔盒 = type=cron,cronexp=1 0,1-23/3 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_mohe.js
+#> 京东白条
+京东白条 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js
 
 #> 京小超 
 京小超 = type=cron,cronexp=11 1-23/2 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js
