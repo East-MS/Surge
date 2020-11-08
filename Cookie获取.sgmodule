@@ -21,11 +21,8 @@
 #> 爱奇艺
 爱奇艺Cookie = type=http-request,pattern=https?:\/\/.*\.iqiyi\.com\/.*authcookie=,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
-#> 不背单词
-不背单词Cookie = type=http-request,pattern=^https:\/\/sapi\.beingfine\.cn\/v3\/bb\/reward\/by-sign-in,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bubei/bubei.js
-
 #> 百词斩
 百词斩Cookie = type=http-request,pattern=^https://group\.baicizhan\.com/group/rewards?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bcz/bcz.cookie.js
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, sapi.beingfine.cn, group.baicizhan.com
+hostname = %APPEND% api.m.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, group.baicizhan.com
