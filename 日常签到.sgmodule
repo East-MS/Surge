@@ -14,6 +14,7 @@
 宠汪汪喂食=type=cron,cronexp=12 */1 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js,timeout=30, wake-system=1
 宠汪汪偷好友积分与狗粮=type=cron,cronexp=0 0,6 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_steal.js,timeout=420, wake-system=1
 宠汪汪积分兑换奖品=type=cron,cronexp=1 0,8,12,16 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_reward.js,timeout=30, wake-system=1
+聚宝盆投狗粮辅助 = type=http-response,pattern=^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_petTreasureBox.js
 京东天天加速=type=cron,cronexp=8 */3 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js,timeout=130, wake-system=1
 京东摇钱树=type=cron,cronexp=15 */5 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js,timeout=130, wake-system=1
 摇京豆=type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_club_lottery.js, timeout=50, wake-system=1
@@ -30,6 +31,7 @@
 京喜工厂 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
 十元街 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js
 东东工厂 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js
+东东小窝 = type=cron,cronexp="16 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_small_home.js
 
 #> 饿了么（打开软件手动，我的左上角签到）
 饿了么签到 = type=cron,cronexp=3 0 * * *,script-path= https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
