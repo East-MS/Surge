@@ -47,5 +47,8 @@ Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserc
 #> draft
 draft内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
 
+#> 聚宝盆投狗粮辅助
+聚宝盆投狗粮辅助 = type=http-response,pattern=^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_petTreasureBox.js
+
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, mp.weixin.qq.com, ap*.intsig.net, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, avoscloud.com, api.revenuecat.com, buy.itunes.apple.com, backend.getdrafts.com
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, mp.weixin.qq.com, ap*.intsig.net, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, avoscloud.com, api.revenuecat.com, buy.itunes.apple.com, backend.getdrafts.com, jdjoy.jd.com
