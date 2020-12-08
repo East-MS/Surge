@@ -21,20 +21,20 @@ let token = "784a03feb07989d3339dfa41c7eb41777436cbfa";
 
 let repositories = [
     {
-        name: "NZW9314脚本",
-        url: "https://github.com/nzw9314/QuantumultX/tree/master",
+        name: "京东脚本",
+        url: "https://github.com/lxk0301/jd_scripts/tree/master",
     },
     {
         name: "clash_for_windows_pkg",
         url: "https://github.com/Fndroid/clash_for_windows_pkg/releases",
     },
     {
-        name: "Chavy脚本",
-        url: "https://github.com/chavyleung/scripts",
+        name: "神机规则",
+        url: "https://github.com/DivineEngine/Profiles/tree/master",
     },
     {
         name: "NobyDa签到",
-        file_names: ["JD-DailyBonus/JD_DailyBonus.js", "52pojie-DailyBonus"], //路径模板🌟
+        file_names: ["JD-DailyBonus/JD_DailyBonus.js", "iQIYI-DailyBonus"], //路径模板🌟
         url: "https://github.com/NobyDa/Script/tree/master",
     },
     {
