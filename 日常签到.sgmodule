@@ -42,6 +42,7 @@
 直播红包雨 = type=cron,cronexp="0 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
 京东白条 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js
 苹果抽奖机 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_apple_live.js
+PUBG = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pubg.js
 
 #> 饿了么（打开软件手动，我的左上角签到）
 饿了么签到 = type=cron,cronexp=3 0 * * *,script-path= https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
