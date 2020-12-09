@@ -62,8 +62,5 @@
 #> GitHub监控
 GitHub监控= type=cron,cronexp=0 10 * * *,script-path=https://raw.githubusercontent.com/dongzi-L/Module/master/github.js
 
-#> 不背单词
-不背单词= type=cron,cronexp=20 8 8 * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bubei/bubei.js
-
 #> 滴滴出行
 滴滴出行= type=cron,cronexp=10 1 * * *, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js,wake-system=1
