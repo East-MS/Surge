@@ -6,6 +6,9 @@
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
 京东Cookie = max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex)
 
+#> 京豆cookie
+获取京东Cookie = type=http-request,pattern=^https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_cookie.js,script-update-interval=0
+
 #> 饿了么
 饿了么Cookie = script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js,type=http-request,pattern=^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$
 
@@ -33,4 +36,4 @@ http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshT
 http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js, tag=CSDNcookie
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, as.xiaojukeji.com, account.huami.com, *.csdn.net
+hostname = %APPEND% api.m.jd.com, wq.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, as.xiaojukeji.com, account.huami.com, *.csdn.net
