@@ -23,7 +23,7 @@
 进店领豆=type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_shop.js,timeout=30, wake-system=1
 #京东手机狂欢城=type=cron,cronexp=1 0-18/6 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_818.js, timeout=150, wake-system=1
 京东全民开红包=type=cron,cronexp=1 1 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js, wake-system=1
-#京东星推官=type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_xtg.js, timeout=550, wake-system=1
+京东星推官=type=cron,cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_xtg.js, timeout=550, wake-system=1
 京豆变动通知=type=cron,cronexp=2 9 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_change.js, timeout=650, wake-system=1
 京东全民营业领金币=type=cron,cronexp=20 * * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_collectProduceScore.js, wake-system=1
 点点券 = type=cron,cronexp="10 0,20 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js
@@ -40,7 +40,7 @@
 京东快递签到 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
 数码加购京豆 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js
 直播红包雨 = type=cron,cronexp="0 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
-#京东白条 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js
+京东白条 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js
 苹果抽奖机 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_apple_live.js
 PUBG = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pubg.js
 京东抽奖机 = type=cron,cronexp=11 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
