@@ -31,9 +31,5 @@
 #> 小米运动
 小米运动获取Token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
 
-#> CSDN
-http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js, tag=CSDNcookie
-http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js, tag=CSDNcookie
-
 [MITM]
-hostname = %APPEND% api.m.jd.com, wq.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, as.xiaojukeji.com, account.huami.com, *.csdn.net
+hostname = %APPEND% api.m.jd.com, wq.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, as.xiaojukeji.com, account.huami.com
