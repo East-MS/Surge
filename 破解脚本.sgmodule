@@ -18,7 +18,7 @@
 扫描全能王 = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
 
 #> Fantastical内购
-#Fantastical内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details)
+Fantastical内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details)
 
 #> XMind
 # XMind内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/XMind.js,type=http-response,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices
