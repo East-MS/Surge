@@ -9,5 +9,7 @@
 宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code=,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
 宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
 
+来客有礼cookie = type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
+
 [MITM]
 hostname = %APPEND% draw.jdfcloud.com, jdjoy.jd.com
