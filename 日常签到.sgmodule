@@ -89,8 +89,6 @@ crazyJoy任务 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=1750,scrip
 
 crazyJoy挂机 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=1750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy_coin.js
 
-来客有礼 = type=cron,cronexp=30 20 * * *,wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
-
 #过期任务
 #直播红包雨 = type=cron,cronexp="0 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
 #秒杀红包雨 = type=cron,cronexp="10 9 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
