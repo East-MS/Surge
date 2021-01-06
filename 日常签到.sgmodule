@@ -4,7 +4,7 @@
 
 [Script]
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
-京东 = type=cron,cronexp=1 */6 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+京东 = type=cron,cronexp=10 */6 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
 #> 京豆
 东东农场=type=cron,cronexp=40 8-18/5 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_fruit.js,timeout=530, wake-system=1
@@ -35,7 +35,7 @@
 
 取关京东店铺商品=type=cron,cronexp=55 23 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js,timeout=250, wake-system=1
 
-进店领豆=type=cron,cronexp=0 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_shop.js,timeout=130, wake-system=1
+进店领豆=type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_shop.js,timeout=130, wake-system=1
 
 京东全民开红包=type=cron,cronexp=1 1 * * *,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js, wake-system=1
 
@@ -71,9 +71,9 @@
 
 京东直播 = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js
 
-京东健康 = type=cron,cronexp="10 8 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js
+京东健康 = type=cron,cronexp="10 23 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js
 
-京东赚赚 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js
+京东赚赚 = type=cron,cronexp="20 11 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js
 
 注销京东会员卡 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unbind.js
 
@@ -98,22 +98,22 @@ crazyJoy挂机 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=1750,scrip
 #京东看一看 = type=cron,cronexp="10-20/10 9 * * *",wake-system=1,timeout=2120,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js
 
 #> 饿了么（打开软件手动，我的左上角签到）
-饿了么签到 = type=cron,cronexp=3 0 * * *,script-path= https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
-饿了么红包 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js,script-update-interval=0
+饿了么签到 = type=cron,cronexp=3 13 * * *,script-path= https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
+饿了么红包 = type=cron,cronexp=4 13 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js,script-update-interval=0
 饿了么_领取吃货豆 = type=cron,cronexp=50 23 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
 饿了么_领取任务 = type=cron,cronexp=00 10 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_mission.js
 
 #> 腾讯视频签到（浏览器访问: https://film.qq.com/）
-腾讯视频 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
+腾讯视频 = type=cron,cronexp=5 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
 
 #> 美团
-美团 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
+美团 = type=cron,cronexp=6 13 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
 
 #> 网易云音乐
-网易云音乐 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,script-update-interval=0
+网易云音乐 = type=cron,cronexp=30 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,script-update-interval=0
 
 #> 爱奇艺视频
-爱奇艺 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+爱奇艺 = type=cron,cronexp=28 9 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 #> GitHub监控
 GitHub监控= type=cron,cronexp=0 10 * * *,script-path=https://raw.githubusercontent.com/dongzi-L/Module/master/github.js
