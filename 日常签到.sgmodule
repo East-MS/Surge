@@ -29,7 +29,7 @@
 
 摇京豆=type=cron,cronexp="5 0 * * *",script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_club_lottery.js, timeout=1150, wake-system=1
 
-京小超=type=cron,cronexp="11 1-23/5 * * *",script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_superMarket.js,timeout=530, wake-system=1
+东东超市=type=cron,cronexp="11 1-23/5 * * *",script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_superMarket.js,timeout=530, wake-system=1
 
 京小超领蓝币(兑换京豆)=type=cron,cronexp="0,30 0 * * *",script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_blueCoin.js,timeout=130, wake-system=1
 
@@ -59,9 +59,7 @@
 
 领京豆额外奖励 = type=cron,cronexp="30 10 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
 
-健康抽奖机 = type=cron,cronexp="30 2 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js
-
-京东快递签到 = type=cron,cronexp="20 0 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
+京东快递签到 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
 
 京东抽奖机 = type=cron,cronexp="11 1 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
 
