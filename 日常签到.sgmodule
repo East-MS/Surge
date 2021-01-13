@@ -6,7 +6,7 @@
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
 京东 = type=cron,cronexp="10 */6 * * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
-#> 京豆
+#> lx0301
 东东农场=type=cron,cronexp="40 8-18/5 * * *",script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_fruit.js,timeout=530, wake-system=1
 
 东东萌宠=type=cron,cronexp="20 8-18/5 * * *",script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pet.js,timeout=530, wake-system=1
@@ -59,10 +59,6 @@
 
 京东快递签到 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
 
-京东抽奖机 = type=cron,cronexp="11 1 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
-
-京东排行榜 = type=cron,cronexp="11 9 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
-
 小米运动 = type=cron,cronexp="15 20 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
 
 京东直播 = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js
@@ -95,9 +91,20 @@ crazyJoy挂机 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=1750,scrip
 
 京东年货节 = type=cron,cronexp="35 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_nh.js
 
+超级直播间红包雨 = type=cron,cronexp="30,31 20-23/1 12 1 *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain.js
+
+#> yangtingxiao
 白条领券 = type=cron,cronexp="0 0,9 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js
 
-超级直播间红包雨 = type=cron,cronexp="30,31 20-23/1 12 1 *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain.js
+京东抽奖机 = type=cron,cronexp="11 1 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+
+京东排行榜 = type=cron,cronexp="11 9 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
+
+东东小窝 = type=cron,cronexp="11 10 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_woHome.js
+
+天天挖矿 = type=cron,cronexp="10 1 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
+
+疯狂的JOY = type=cron,cronexp="11 6 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_crazyJoy.js
 
 #> 饿了么（打开软件手动，我的左上角签到）
 饿了么签到 = type=cron,cronexp="3 13 * * *",script-path= https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
