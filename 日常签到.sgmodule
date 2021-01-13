@@ -75,6 +75,8 @@ crazyJoy任务 = type=cron,cronexp="30 8 * * *",wake-system=1,timeout=1750,scrip
 
 京喜财富岛 = type=cron,cronexp="0 * * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd.js
 
+京喜财富岛提现 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/zbt494/kaze/main/Task/jx_cfdtx.js
+
 京东金融-天天提鹅 = type=cron,cronexp="0 */3 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js
 
 京东金融-养猪猪 = type=cron,cronexp="12 * * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js
