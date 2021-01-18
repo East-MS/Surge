@@ -1,6 +1,5 @@
 #!name=Cookie获取
 #!desc=东子
-#!system=ios
 
 [Script]
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
