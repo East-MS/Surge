@@ -50,7 +50,7 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=1750,scrip
 签到领现金 = type=cron,cronexp="4 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_cash.js
 京喜签到 = type=cron,cronexp="27 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jx_sign.js
 京东年货节 = type=cron,cronexp="34 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nh.js
-#京东家庭号 = type=cron,cronexp="22 * * * *",wake-system=1,timeout=2220,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_family.js
+#京东家庭号 = type=cron,cronexp="22 */2 * * *",wake-system=1,timeout=2220,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_family.js
 京东炸年兽🧨 = type=cron,cronexp="59 7 * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js
 京东炸年兽🧨收集 = type=cron,cronexp="20 * * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js
 京东神仙书院 = type=cron,cronexp="3 8 * * *",wake-system=1,timeout=2000,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_immortal.js
