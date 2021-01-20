@@ -44,8 +44,5 @@
 CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/LN\/uamrandcodelogin\/autoLogin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
 CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/BN\/realFeeQuery\/getRealFee,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
 
-#> 天天挖矿
-天天挖矿 = type=http-request,pattern=^https:\/\/operation-api\.jimistore\.com\/*, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
-
 [MITM]
-hostname = %APPEND% api.m.jd.com, wq.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, api.didialift.com, bosp-api.xiaojukeji.com, as.xiaojukeji.com, manhattan.webapp.xiaojukeji.com, pay.diditaxi.com.cn, account.huami.com, clientaccess.10086.cn, operation-api.jimistore.com
+hostname = %APPEND% api.m.jd.com, wq.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, api.didialift.com, bosp-api.xiaojukeji.com, as.xiaojukeji.com, manhattan.webapp.xiaojukeji.com, pay.diditaxi.com.cn, account.huami.com, clientaccess.10086.cn
