@@ -60,16 +60,16 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,scrip
 
 #> shylocks
 宝洁美发屋 = type=cron,cronexp="1 8,9 14-31/1 1 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_bj.js
-工业品爱消除 = type=cron,cronexp="53 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_gyec.js
+#工业品爱消除 = type=cron,cronexp="53 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_gyec.js
 盲盒抽京豆 = type=cron,cronexp="9 8 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_mh.js
 超级直播间幸运值抽京豆 = type=cron,cronexp="10 20 15 1 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_mh_super.js
 京东秒秒币 = type=cron,cronexp="10 8 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_ms.js
 神券京豆 = type=cron,cronexp="1 7 13 1 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_super_coupon.js
-京东粉丝专享 = type=cron,cronexp="51 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_wechat_sign.js
-东东爱消除 = type=cron,cronexp="9 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_xxl.js
+#京东粉丝专享 = type=cron,cronexp="51 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_wechat_sign.js
+#东东爱消除 = type=cron,cronexp="9 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_xxl.js
 小鸽有礼 = type=cron,cronexp="17 7 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_xg.js
 #京年团圆pick = type=cron,cronexp="5 0 19,20 1 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_vote.js
-个护爱消除 = type=cron,cronexp="42 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_xxl_gh.js
+#个护爱消除 = type=cron,cronexp="42 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_xxl_gh.js
 超级直播间红包雨 = type=cron,cronexp="30,31 20-23/1 19 1 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain.js
 直播间红包雨 = type=cron,cronexp="0,1 19-21/1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain2.js
 半点红包雨 = type=cron,cronexp="58,59,0 29,30 12-23/1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain_half.js
@@ -83,7 +83,7 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,scrip
 京东排行榜 = type=cron,cronexp="15 9 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
 东东小窝 = type=cron,cronexp="11 10 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_woHome.js
 疯狂的JOY = type=cron,cronexp="11 8 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_crazyJoy.js
-全民炸年兽 = type=cron,cronexp=7 0-22/2 * * *,wake-system=1,timeout=500,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_nianBeast.js
+#全民炸年兽 = type=cron,cronexp=7 0-22/2 * * *,wake-system=1,timeout=500,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_nianBeast.js
 
 #> 饿了么（打开软件手动，我的左上角签到）
 饿了么签到 = type=cron,cronexp="3 13 * * *",script-path= https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
