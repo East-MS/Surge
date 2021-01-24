@@ -29,7 +29,7 @@
 十元街 = type=cron,cronexp="40 13 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_syj.js
 东东工厂 = type=cron,cronexp="22 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdfactory.js
 东东小窝 = type=cron,cronexp="56 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_small_home.js
-京东汽车 = type=cron,cronexp="20 10 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car.js
+京东汽车签到 = type=cron,cronexp="20 10 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car.js
 京东汽车兑换 = type=cron,cronexp="58,59 59 23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car_exchange.js
 京东汽车兑换(备用) = type=cron,cronexp="0,1 0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car_exchange.js
 领京豆额外奖励 = type=cron,cronexp="30 15 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_home.js
