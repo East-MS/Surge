@@ -59,6 +59,7 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,scrip
 京东神仙书院 = type=cron,cronexp="3 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_immortal.js
 京东神仙书院答题 = type=cron,cronexp="20 * * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_immortal_answer.js
 闪购盲盒 = type=cron,cronexp="20 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_sgmh.js
+5G狂欢城 = type=cron,cronexp="0 0,6,12,18 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_5g.js
 
 #> shylocks
 源头好物红包 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_coupon.js
