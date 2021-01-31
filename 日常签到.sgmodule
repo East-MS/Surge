@@ -43,7 +43,7 @@
 crazyJoy任务 = type=cron,cronexp="31 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy.js
 crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy_coin.js
 京喜财富岛 = type=cron,cronexp="21 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js
-京喜财富岛提现 = type=cron,cronexp="0,1 0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dongzi-L/QuantumultX/master/tx.js
+京喜财富岛提现 = type=cron,cronexp="0,1 0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dongzi-L/QuantumultX/master/scripts/tx.js
 京东金融-天天提鹅 = type=cron,cronexp="4 */3 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_daily_egg.js
 京东金融-养猪猪 = type=cron,cronexp="12 * * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pigPet.js
 获取互助码 = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_get_share_code.js
@@ -63,12 +63,13 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,scrip
 京东手机狂欢城 = type=cron,cronexp=0 0-18/6 * * *,wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_818.js
 
 #> shylocks
-京东粉丝专享 = type=cron,cronexp="11 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dongzi-L/QuantumultX/master/jd_wechat_sign
+京东粉丝专享 = type=cron,cronexp="11 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dongzi-L/QuantumultX/master/scripts/jd_wechat_sign.js
 源头好物红包 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_coupon.js
 京东手机年终奖 = type=cron,cronexp="15 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_festival.js
 盲盒抽京豆 = type=cron,cronexp="1 7 * * *",wake-system=1,timeout=200,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mh.js
 京东秒秒币 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=200,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_ms.js
 小鸽有礼 = type=cron,cronexp="5 7 * * *",wake-system=1,timeout=200,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xg.js
+小鸽有礼2 = type=cron,cronexp="30 7 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xgyl.js
 超级直播间红包雨 = type=cron,cronexp="30,31 20-23/1 19 1 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_live_redrain.js
 直播间红包雨 = type=cron,cronexp="0,1 19-21/1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_live_redrain2.js
 半点红包雨 = type=cron,cronexp="58,59,0 29,30 12-23/1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_live_redrain_half.js
