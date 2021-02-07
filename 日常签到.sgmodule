@@ -37,7 +37,6 @@
 小米运动 = type=cron,cronexp="15 20 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/backUp/xmSports.js
 京东直播 = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live.js
 京东赚赚 = type=cron,cronexp="20 16 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdzz.js
-注销京东会员卡 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js
 crazyJoy任务 = type=cron,cronexp="31 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy.js
 crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy_coin.js
 京喜财富岛 = type=cron,cronexp="21 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js
@@ -54,6 +53,8 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,scrip
 闪购盲盒 = type=cron,cronexp="20 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_sgmh.js
 京东压岁钱 = type=cron,cronexp="20 8,12 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_newYearMoney.js
 京东压岁钱抢百元卡 = type=cron,cronexp="0 0 9,12,16,20 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_newYearMoney_lottery.js
+
+#注销京东会员卡 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js
 
 #> shylocks
 京东粉丝专享 = type=cron,cronexp="11 0,1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dongzi-L/QuantumultX/master/scripts/jd_wechat_sign.js
