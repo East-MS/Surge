@@ -47,7 +47,6 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,scrip
 口袋书店 = type=cron,cronexp="1 8,12,18* * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bookshop.js
 签到领现金 = type=cron,cronexp="4 0,1 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_cash.js
 京喜签到 = type=cron,cronexp="27 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jx_sign.js
-京东年货节 = type=cron,cronexp="34 0,1 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nh.js
 京东家庭号 = type=cron,cronexp="22 */2 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_family.js
 京东炸年兽🧨 = type=cron,cronexp="5 0 9,10,20,21 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian.js
 闪购盲盒 = type=cron,cronexp="20 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_sgmh.js
