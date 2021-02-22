@@ -56,7 +56,6 @@ crazyJoy挂机 = type=cron,cronexp="40 * * * *",wake-system=1,timeout=3600,scrip
 京东粉丝专享 = type=cron,cronexp="11 0,1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dongzi-L/QuantumultX/master/scripts/jd_wechat_sign.js
 京东秒秒币 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=200,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_ms.js
 小鸽有礼2 = type=cron,cronexp="30 7 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xgyl.js
-年货直播红包雨 = type=cron,cronexp="0 0 0,9,11,13,15,17,19,20,21,23 8-18/1 2 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dongzi-L/QuantumultX/master/scripts/jd_live_redrain_nian.js
 
 #> yangtingxiao
 京东抽奖机 = type=cron,cronexp="11 1 * * *",wake-system=1,timeout=750,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
