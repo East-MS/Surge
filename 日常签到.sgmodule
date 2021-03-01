@@ -60,7 +60,6 @@ crazyJoy挂机 = type=cron,cronexp="43 * * * *",wake-system=1,timeout=3600,scrip
 
 #> i-chenzhe
 粉丝互动 = type=cron,cronexp="3 10 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_fanslove.js
-华硕-iqiyi = type=cron,cronexp="0 0 22-28 2 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_asus_iqiyi.js
 摇一摇 = type=cron,cronexp="3 20 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_shake.js
 
 #> yangtingxiao
