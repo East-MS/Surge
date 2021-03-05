@@ -4,7 +4,7 @@
 [URL Rewrite]
 #【我的】->【我的钱包】->【卡包】->【一个个手动取消店铺会员】
 # https://github.com/ddgksf2013/Cuttlefish/raw/master/Rewrite/Jd_unbind.conf
-^(https://shopmember.m.jd.com/member/membersRule\?(?!.*sign=member.*)) url 302 $1sign=member&
+^(https://shopmember.m.jd.com/member/membersRule\?(?!.*sign=member.*)) 302 $1sign=member&
 
 [MITM]
 hostname = %APPEND% shopmember.m.jd.com
