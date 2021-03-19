@@ -30,7 +30,7 @@ crazyJoy挂机 = type=cron,cronexp="43 * * * *",wake-system=1,timeout=3600,scrip
 京东宠汪汪 = type=cron,cronexp="5 0-23/2 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy.js
 京东宠汪汪喂食 = type=cron,cronexp="5 0-23/1 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_feedPets.js
 宠汪汪积分兑换奖品 = type=cron,cronexp="0,1,2,5,10,15 0 0-16/8 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_reward.js
-宠汪汪邀请助力与赛跑助力 = type=cron,cronexp="16 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_run.js
+宠汪汪邀请助力与赛跑助力 = type=cron,cronexp="16 10,11 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_run.js
 #宠汪汪偷好友积分与狗粮 = type=cron,cronexp="7 0-21/3 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_steal.js
 京小兑 = type=cron,cronexp="31 1,10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js
 #京喜农场 = type=cron,cronexp="0 9,12,18 * * *",timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxnc.js
