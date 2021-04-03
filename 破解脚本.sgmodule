@@ -36,4 +36,4 @@ Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubuserc
 draft内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, ap*.intsig.net, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, buy.itunes.apple.com, backend.getdrafts.com
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, buy.itunes.apple.com, backend.getdrafts.com
