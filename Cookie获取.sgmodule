@@ -41,9 +41,13 @@
 CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/LN\/uamrandcodelogin\/autoLogin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
 CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/BN\/realFeeQuery\/getRealFee,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
 
-#> 滴滴获取token
+#> 滴滴水果获取token
 滴滴获取token = type=http-request,pattern=^https:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/watering,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_getToken.js
 
+#> 京东到家cookie
+京东到家cookie = type=http-request,pattern=daojia.jd.com/html/index.html,script-path=https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_getck.js
+
+
 [MITM]
-hostname = %APPEND% api.m.jd.com, me-api.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, api.didialift.com, bosp-api.xiaojukeji.com, as.xiaojukeji.com, manhattan.webapp.xiaojukeji.com, pay.diditaxi.com.cn, account.huami.com, clientaccess.10086.cn, game.xiaojukeji.com
+hostname = %APPEND% api.m.jd.com, me-api.jd.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, api.didialift.com, bosp-api.xiaojukeji.com, as.xiaojukeji.com, manhattan.webapp.xiaojukeji.com, pay.diditaxi.com.cn, account.huami.com, clientaccess.10086.cn, game.xiaojukeji.com, daojia.jd.com
 
