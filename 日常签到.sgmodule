@@ -4,9 +4,9 @@
 [Script]
 #> Hello World
 京东种豆得豆 = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_plantBean.js
-东东农场 = type=cron,cronexp="35 6-18/6 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_fruit.js
+东东农场 = type=cron,cronexp="35 8,13,20 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_fruit.js
 东东工厂 = type=cron,cronexp="2 11,20 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jdfactory.js
-京喜工厂 = type=cron,cronexp="46 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory.js
+京喜工厂 = type=cron,cronexp="56 1-23/2 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory.js
 东东萌宠 = type=cron,cronexp="25 6-18/6 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_pet.js
 东东健康社区 = type=cron,cronexp="19 8,19 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_health.js
 闪购盲盒 = type=cron,cronexp="43 11 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_sgmh.js
