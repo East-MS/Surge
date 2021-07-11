@@ -27,13 +27,16 @@ Fantastical内购 = requires-body=1,max-size=0,script-path=https://raw.githubuse
 Mimo内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/mimo.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.getmimo\.com\/v1\/subscriptions$
 
 #> Pdfexpert
-Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/pdfexpert.js,script-update-interval=0,type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$)
+# Pdfexpert内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/pdfexpert.js,script-update-interval=0,type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$)
 
 #> Bear熊掌记
 熊掌记内购 = requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/verify_receipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
 
 #> draft
-draft内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
+# draft内购 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
+
+#> 扫描全能王
+http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, buy.itunes.apple.com, backend.getdrafts.com
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, api.flexibits.com, www.xmind.cn, *.grammarly.com, api.getmimo.com, license.pdfexpert.com, buy.itunes.apple.com, backend.getdrafts.com, ap*.intsig.net
