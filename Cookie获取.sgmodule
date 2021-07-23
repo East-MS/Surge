@@ -5,6 +5,9 @@
 #> 京东签到（登录https://bean.m.jd.com 点击签到）
 京东Cookie = max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex)
 
+#> 京东金融
+京东金融领豆Cookie = type=http-request,pattern=^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/uc\/newna\/m\/userstat,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dompling/Script/master/jd/jd_jr_cookie.js,script-update-interval=0
+
 #> 京喜农场cookie
 京喜农场cookie = type=http-request,pattern=^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
 
@@ -38,5 +41,5 @@ CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/B
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, wq.jd.com, m.jingxi.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, account.huami.com, clientaccess.10086.cn, daojia.jd.com
+hostname = %APPEND% api.m.jd.com, ms.jr.jd.com, wq.jd.com, m.jingxi.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, account.huami.com, clientaccess.10086.cn, daojia.jd.com
 
