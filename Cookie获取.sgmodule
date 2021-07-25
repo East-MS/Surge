@@ -39,9 +39,6 @@ CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/B
 #> 京东到家cookie
 京东到家cookie = type=http-request,pattern=daojia.jd.com/html/index.html,script-path=https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_getck.js
 
-#> 抖音极速版
-抖音极速 = type=http-request,pattern=luckycat/aweme/v1/task/done/read,script-path=https://gitee.com/passerby-b/javascript/raw/master/dyjs.js, requires-body=true, timeout=10
-
 [MITM]
-hostname = %APPEND% api.m.jd.com, ms.jr.jd.com, wq.jd.com, m.jingxi.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, account.huami.com, clientaccess.10086.cn, daojia.jd.com, *.snssdk.com, *.amemv.com
+hostname = %APPEND% api.m.jd.com, ms.jr.jd.com, wq.jd.com, m.jingxi.com, h5.ele.me, *.video.qq.com, i.meituan.com, music.163.com, *.iqiyi.com, account.huami.com, clientaccess.10086.cn, daojia.jd.com
 
