@@ -1,4 +1,4 @@
-#!name=解锁Bear
+#!name=Bear
 #!desc=熊掌记
 [MITM]
 hostname = %APPEND% buy.itunes.apple.com
