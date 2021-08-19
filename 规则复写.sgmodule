@@ -3,7 +3,6 @@
 
 [URL Rewrite]
 # Nobyda规则
-# Update time: 2020.9.16
 ^https?:\/\/interface\.music\.163\.com\/eapi\/ad - reject
 ^https?:\/\/iadmusicmat\.music.126.net\/.*?jpg$ - reject
 ^https?:\/\/p\.c\.music\.126.net\/.*?jpg$ - reject
