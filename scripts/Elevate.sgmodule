@@ -1,0 +1,8 @@
+#!name=Unlock Elevate
+#!desc=Elevate学习
+
+[MITM]
+hostname = %APPEND% accounts.elevateapp.net
+
+[Script]
+Elevate = requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/elevate.js,script-update-interval=0,type=http-response,pattern=^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token*
