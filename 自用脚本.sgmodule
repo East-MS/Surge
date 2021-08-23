@@ -8,6 +8,7 @@
 
 #> 美团外卖
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo? - reject
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
 
 #> 京东
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
