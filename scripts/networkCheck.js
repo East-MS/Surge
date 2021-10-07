@@ -1,16 +1,10 @@
 /**
  * Surge网络信息面板
  */
- const { wifi, v4, v6 } = $network;
+ const { wifi, v4 } = $network;
 
  let cellularInfo = '';
  const carrierNames = {
-   //台灣電信業者 MNC Code
-   '466-11': '中華電信', '466-92': '中華電信',
-   '466-01': '遠傳電信', '466-03': '遠傳電信',
-   '466-97': '台灣大哥大',
-   '466-89': '台灣之星',
-   '466-05': '亞太電信',
    //中国电信业者 MNC Code
    '460-03': '中国电信', '460-05': '中国电信', '460-11': '中国电信',
    '460-01': '中国联通', '460-06': '中国联通', '460-09': '中国联通',
@@ -35,7 +29,7 @@
    'NR': '5G',
  };
  
- if (!v4.primaryAddress && !v6.primaryAddress) {
+ if (!v4.primaryAddress) {
    $done({
      title: '没有网络',
      content: '尚未连接网络\n请检查网络后重试',
@@ -67,9 +61,7 @@
        title: wifi.ssid ? wifi.ssid : cellularInfo,
        content:
          (v4.primaryAddress ? `IPv4 : ${v4.primaryAddress} \n` : '') +
-         (v6.primaryAddress ? `IPv6 : ${v6.primaryAddress}\n` : '') +
          (v4.primaryRouter && wifi.ssid ? `Router IPv4 : ${v4.primaryRouter}\n` : '') +
-         (v6.primaryRouter && wifi.ssid ? `Router IPv6 : ${v6.primaryRouter}\n` : '') +
          `节点 IP : ${info.query}\n` +
          `节点 ISP : ${info.isp}\n` +
          `节点 位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
