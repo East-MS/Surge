@@ -6,10 +6,6 @@
 #> 京东金融
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
 
-#> 美团外卖
-^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo? - reject
-^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
-
 #> 京东
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
 
@@ -18,6 +14,7 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
 
 #> 铁路12306
 https://ad.12306.cn/* - reject
+
 [Script]
 #> 京东比价
 京东比价 = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
