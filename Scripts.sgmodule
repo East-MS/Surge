@@ -1,5 +1,5 @@
-#!name=自用脚本
-#!desc=东子
+#!name=AdBlock
+#!desc=广告优化
 
 [URL Rewrite]
 #> 去除开屏广告
