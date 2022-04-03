@@ -7,10 +7,10 @@
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
 
 #> 京东
-#^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
 
 #> 京东极速版
-#https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
+https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
 
 #> 铁路12306
 https://ad.12306.cn/* - reject
