@@ -1,5 +1,5 @@
-#!name=Unlock CamScanner
-#!desc=全能扫描王
+#!name=全能扫描王
+#!desc=扫描
 
 [MITM]
 hostname = %APPEND% ap*.intsig.net
