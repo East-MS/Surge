@@ -6,11 +6,6 @@
 ^https:\/\/www\.zhihu\.com\/ header-replace User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36$2"
 ^https://www\.zhihu\.com\/(question|topic) header-replace User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
 
-#> 百度网盘重写到桌面版
-#^https:\/\/pan\.baidu\.com header-replace User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36$2"
-#> 百度防跳转
-^https?:\/\/.*\.baidu\.com header-replace User-Agent "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)"
-
 #> CSDN重写到桌面版
 ^https:\/\/blog\.csdn\.net\/ header-replace User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36$2"
 
@@ -27,9 +22,6 @@
 知乎优化 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/www\.zhihu\.com\/question,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/betterweb/zhihux.user.js
 知乎优化 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/www\.zhihu\.com\/topic,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/betterweb/zhihux.user.js
 
-#> 百度网盘
-#百度网盘优化 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/pan\.baidu\.com,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/betterweb/baiduPan.js
-
 #> CSDN
 CSDN优化 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/blog\.csdn\.net\/,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/betterweb/csdn.res.js
 
@@ -40,4 +32,4 @@ google去URL = type=http-request,requires-body=1,max-size=0,pattern=https:\/\/ww
 EndlessGoogle = type=http-response,pattern=https:\/\/www\.google\.com\/(m|search),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js,script-update-interval=-1
 
 [MITM]
-hostname = %APPEND% oia.zhihu.com, link.zhihu.com, www.zhihu.com, pan.baidu.com, *.baidu.com, blog.csdn.net, *.openinstall.io, www.google.com
+hostname = %APPEND% oia.zhihu.com, link.zhihu.com, www.zhihu.com, blog.csdn.net, *.openinstall.io, www.google.com
