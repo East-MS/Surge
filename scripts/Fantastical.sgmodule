@@ -1,5 +1,5 @@
-#!name=Unlock Fantastical
-#!desc=Fantastical提醒
+#!name=Fantastical
+#!desc=任务提醒
 [MITM]
 hostname = %APPEND% api.flexibits.com
 [Script]
