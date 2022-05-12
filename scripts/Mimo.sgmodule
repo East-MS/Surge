@@ -1,5 +1,5 @@
 #!name=Mimo
-#!desc=代码
+#!desc=python代码
 [MITM]
 hostname = %APPEND% api.getmimo.com
 [Script]
