@@ -1,5 +1,5 @@
 #!name=网站界面优化
-#!desc=知乎、CSDN、谷歌
+#!desc=知乎、谷歌
 
 [Header Rewrite]
 #> 知乎重写到桌面版
