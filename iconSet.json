@@ -1,0 +1,8 @@
+{
+    "name": "East's Icon Set",
+    "icons": [
+     { "name": "Nexitally", "url": "https://github.com/Orz-3/mini/blob/master/Color/Nex.png?raw=true"},
+     { "name": "Amy", "url": "https://github.com/Orz-3/mini/blob/master/Color/Amy.png?raw=true"},
+     { "name": "Apple", "url": "https://github.com/Orz-3/mini/blob/master/Color/Apple.png?raw=true"},
+    ]
+}
