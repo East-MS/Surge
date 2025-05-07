@@ -5,7 +5,7 @@
 #!homepage = https://github.com/mist-whisper/Surge/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/REDnote.png
 #!date = 2025-03-22 21:30:00
-#!category = 去广告
+#!category = 去广告合集
 
 [Rule]
 AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
