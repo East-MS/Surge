@@ -2,10 +2,9 @@
 #!desc = 过滤淘宝开屏广告
 #!openUrl = 
 #!author = RuCu6[https://github.com/RuCu6]
-#!homepage = https://github.com/mist-whisper/Surge/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Taobao.png
 #!date = 2024-11-28 00:00:00
-#!category = 去广告合集
+#!category = App优化增强
 
 [Rule]
 DOMAIN,adashx.m.taobao.com,REJECT,extended-matching,pre-matching
