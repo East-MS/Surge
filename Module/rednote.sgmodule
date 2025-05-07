@@ -1,11 +1,10 @@
 #!name = 小红书去广告
-#!desc = 过滤信息流推广，移除笔记和评论区图片视频以及live图水印，移除评论区表情包水印和下载限制，如有异常，请先清除缓存再尝试。
+#!desc = 过滤信息流推广，移除笔记和评论区图片视频以及live图水印，移除评论区表情包水印和下载限制。
 #!openUrl = 
 #!author = RuCu6[https://github.com/RuCu6],fmz200[https://github.com/fmz200]
-#!homepage = https://github.com/mist-whisper/Surge/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/REDnote.png
 #!date = 2025-03-22 21:30:00
-#!category = 去广告合集
+#!category = App优化增强
 
 [Rule]
 AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
