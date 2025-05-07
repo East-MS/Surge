@@ -2,10 +2,9 @@
 #!desc = 过滤广告及去除各部分推广模块，全面净化微博
 #!openUrl = 
 #!author = RuCu6[https://github.com/RuCu6], zmqcherish[https://github.com/zmqcherish]
-#!homepage = https://github.com/mist-whisper/Surge/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Weibo.png
 #!date = 2025-02-28 19:53:25
-#!category = 去广告
+#!category = App优化增强
 
 [Rule]
 # 请求放行
