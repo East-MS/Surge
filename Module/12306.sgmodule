@@ -1,7 +1,7 @@
 #!name=12306去广告
 #!desc=过滤12306应用内广告及开屏广告
 #!system=ios
-#!category=App应用增强
+#!category=App优化增强
 
 [Rule]
 DOMAIN,ad.12306.cn,DIRECT
