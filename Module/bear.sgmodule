@@ -1,0 +1,10 @@
+#!name=bear优化
+#!desc=bear优化使用
+#!system=ios
+#!category=App优化增强
+
+[Script]
+Buy = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/verify_receipt.js,script-update-interval=-1
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
