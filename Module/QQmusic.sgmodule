@@ -1,7 +1,7 @@
 #!name=QQ音乐去广告
 #!desc=屏蔽QQ音乐开屏广告
 #!system=ios
-#!category=App应用增强
+#!category=App优化增强
 
 [Rule]
 # QQ音乐去广告
