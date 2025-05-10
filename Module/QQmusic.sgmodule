@@ -22,3 +22,7 @@ DOMAIN,sdk.e.qq.com,REJECT
 DOMAIN,p.l.qq.com,REJECT
 DOMAIN,us.l.qq.com,REJECT
 DOMAIN,tangram.e.qq.com,REJECT
+DOMAIN,adcdn6.tencentmusic.com,REJECT
+DOMAIN,tmeadquic.y.qq.com,REJECT
+DOMAIN,tmeadbak.y.qq.com,REJECT
+DOMAIN-SUFFIX,imtmp.net,REJECT
