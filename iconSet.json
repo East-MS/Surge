@@ -12,6 +12,7 @@
      { "name": "US", "url": "https://github.com/Orz-3/mini/blob/master/Color/US.png?raw=true"},
      { "name": "JP", "url": "https://github.com/Orz-3/mini/blob/master/Color/JP.png?raw=true"},
      { "name": "SG", "url": "https://github.com/Orz-3/mini/blob/master/Color/SG.png?raw=true"},
-     { "name": "Proxy", "url": "https://github.com/mieqq/mieqq/blob/master/surge.png?raw=true"},   
+     { "name": "Proxy", "url": "https://github.com/mieqq/mieqq/blob/master/surge.png?raw=true"},
+     { "name": "Gemini", "url": "https://github.com/East-MS/Surge/blob/master/Gemini.png?raw=true"},
     ]
 }
