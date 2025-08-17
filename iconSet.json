@@ -1,9 +1,9 @@
 {
     "name": "East's Icon Set",
     "icons": [
-     { "name": "Proxy", "url": "https://github.com/mieqq/mieqq/blob/master/surge.png?raw=true"},
+     { "name": "Proxy", "url": "https://github.com/East-MS/Surge/blob/master/Surge.png?raw=true"},
      { "name": "Apple", "url": "https://github.com/Koolson/Qure/blob/master/IconSet/Apple.png?raw=true"},
-     { "name": "Intelligence", "url": "https://github.com/East-MS/Surge/blob/master/OpenAI.png?raw=true"},
+     { "name": "Intelligence", "url": "https://github.com/East-MS/Surge/blob/master/OpenAI_108x108.png?raw=true"},
      { "name": "Telegram", "url": "https://github.com/Koolson/Qure/blob/master/IconSet/Telegram.png?raw=true"},
      { "name": "Netfilx", "url": "https://github.com/Koolson/Qure/blob/master/IconSet/Netflix_Letter.png?raw=true"},
      { "name": "Disney+", "url": "https://github.com/Koolson/Qure/blob/master/IconSet/Disney%2B.png?raw=true"},
