@@ -1,0 +1,81 @@
+#!name=番茄系去广告
+#!desc=番茄、红果
+#!system=ios
+#!category=App优化增强
+
+# ============================================================
+# v2 说明：脚本不再需要「切模式」
+#
+#   Loon 里的远程脚本是只读的（能看、能刷新，改不了内容，
+#   改了下次拉取也会被覆盖），所以原来那套「把 MODE 改成 log」
+#   在手机上根本执行不了。
+#
+#   现在脚本默认同时做两件事：
+#     1) 过滤 —— 删掉带广告标记的条目（常开）
+#     2) 打日志 —— 每遇到一个「没见过」的接口结构就打一次
+#   所以你在手机上什么都不用改，滑十几屏，回来看脚本日志即可。
+#
+# 用法：先只开档位 A，跑两天确认没影响功能，再开 B
+# 想临时关掉过滤（排查问题用）：直接在本行末尾加 , argument="MODE=off"
+# 想强制每次都打日志（深挖字段用）：加 , argument="MODE=log"
+#   —— 前提是你能改插件文本；改不了就直接禁用整个插件。
+# ============================================================
+
+[Rule]
+
+# ---------- 档位 A：穿山甲 / 巨量引擎广告 SDK（安全，建议常开） ----------
+# 开屏广告、激励视频、Banner 走这里。拦掉后广告位空白，不影响阅读/听书/看剧。
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,oceanengine.com,REJECT
+
+# ---------- 档位 B：埋点与监控（安全，只是少上报） ----------
+DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+
+# ---------- 档位 C：有风险，默认注释掉 ----------
+# log.snssdk.com 是 AppLog 主通道，部分版本的登录/风控也复用；
+# gurd.snssdk.com 是设备注册，拦了可能触发"环境异常"。
+# DOMAIN-SUFFIX,log.snssdk.com,REJECT
+# DOMAIN-SUFFIX,gurd.snssdk.com,REJECT
+
+# ---------- 档位 D：阿里系广告联盟 Tanx / 阿里妈妈（2026-10-31 新增） ----------
+# 依据：番茄小说冷启动时抓到
+#   GET http://ef-dongfeng.tanx.com/tanx?p=...&k=887  → 1x1 gif 曝光打点
+#   UA 为 WebView（Mobile/15E148），即广告是阿里系 H5 页，走 Tanx 而非穿山甲。
+# tanx.com 是阿里广告交易平台，ef-* 是广告位子域；atanx*.alicdn.com 是创意素材 CDN。
+# 拦掉后开屏/信息流里的天猫·淘宝广告页加载不出来，正常阅读/听书不受影响。
+DOMAIN-SUFFIX,tanx.com,REJECT
+DOMAIN-SUFFIX,alimama.com,REJECT
+DOMAIN-SUFFIX,mmstat.com,REJECT
+DOMAIN-SUFFIX,atanx.alicdn.com,REJECT
+DOMAIN-SUFFIX,atanx2.alicdn.com,REJECT
+DOMAIN-SUFFIX,simba.taobao.com,REJECT
+DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
+
+# 穿山甲补充（国际版 SDK 域名，国内版用不到，保守起见也拦掉）
+DOMAIN-SUFFIX,pangle.io,REJECT
+
+# 注意：绝对不要 REJECT 下面这几个，否则 App 直接不可用
+#   api5-normal-sinfonlinea.fqnovel.com   （主 API）
+#   reading.snssdk.com                    （H5 页面/接口）
+#   api.fqnovel.com
+#   lf3-reading.fqnovelpic.com            （封面/插图 CDN）
+#   alicdn.com / aliyuncs.com 整域       （大量正常图片走这里，只能拦 atanx* 子域）
+
+
+[Script]
+
+# 信息流广告过滤 + 结构日志。远程脚本，Loon 首次自动下载并缓存。
+# 脚本里做了「结构签名去重」，同一个接口结构只打一次日志，不会刷屏。
+http-response ^https?://(?:api\d*-normal-[a-z0-9]+\.fqnovel\.com|api\.fqnovel\.com|reading\.snssdk\.com|imapi-oth\.zijieapi\.com)/ script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/fanqie_ad_filter.js, requires-body=true, max-size=0, timeout=30
+
+
+[MITM]
+
+# 只对接口域名做 MITM，不碰图片/CDN，省电省流量
+hostname = %APPEND% *.fqnovel.com, *.snssdk.com, *.zijieapi.com
