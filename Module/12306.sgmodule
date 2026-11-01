@@ -7,8 +7,7 @@
 DOMAIN,ad.12306.cn,DIRECT
 
 [Script]
-http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ script-path=https://kelee.one/Resource/Script/12306/12306_remove_splashscreen_ads.js, requires-body=true, timeout=20, tag=移除12306开屏广告
-http-request ^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ script-path=https://kelee.one/Resource/Script/12306/12306_remove_ads.js, timeout=20, tag=移除12306应用内广告
+12306 = type=http-request, pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList, script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/12306.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% ad.12306.cn, mobile.12306.cn
+hostname = %APPEND% ad.12306.cn
