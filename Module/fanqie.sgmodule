@@ -75,6 +75,6 @@ DOMAIN-SUFFIX,pangle.io,REJECT
 fanqie-filter = type=http-response,pattern=^https?://(?:api\d*-normal-[a-z0-9]+\.fqnovel\.com|api\.fqnovel\.com|reading\.snssdk\.com)/,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/fanqie_ad_filter.js,requires-body=true,max-size=2097152,timeout=30
 
 [MITM]
-
 # 只对接口域名做 MITM，不碰图片/CDN，省电省流量
-hostname = %INSERT% -mssdk.zijieapi.com, -*.zijieapi.com, -zijieapi.com, api*-normal-*.fqnovel.com, api.fqnovel.com, reading.snssdk.com
+# hostname = %INSERT% -mssdk.zijieapi.com, -*.zijieapi.com, -zijieapi.com, api*-normal-*.fqnovel.com, api.fqnovel.com, reading.snssdk.com
+hostname = %INSERT% -fqnovel.com, -*.fqnovel.com, -zijieapi.com, -*.zijieapi.com, reading.snssdk.com
