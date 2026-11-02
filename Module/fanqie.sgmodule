@@ -1,5 +1,5 @@
-#!name=番茄系去广告
-#!desc=番茄、红果
+#!name=番茄去广告
+#!desc=番茄小说、红果短剧
 #!system=ios
 #!category=App优化增强
 
@@ -76,4 +76,5 @@ fanqie-filter = type=http-response,pattern=^https?://(?:api\d*-normal-[a-z0-9]+\
 
 [MITM]
 # 只对接口域名做 MITM，不碰图片/CDN，省电省流量
-hostname = %INSERT% -mssdk.zijieapi.com, -*.zijieapi.com, -zijieapi.com, api*-normal-*.fqnovel.com, api.fqnovel.com, reading.snssdk.com
+# hostname = %INSERT% -mssdk.zijieapi.com, -*.zijieapi.com, -zijieapi.com, api*-normal-*.fqnovel.com, api.fqnovel.com, reading.snssdk.com
+hostname = %APPEND% *.fqnovel.com, *.snssdk.com, *.zijieapi.com
