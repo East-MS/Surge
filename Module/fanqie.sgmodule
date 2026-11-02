@@ -31,11 +31,11 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,oceanengine.com,REJECT
 
 # ---------- 档位 B：埋点与监控（安全，只是少上报） ----------
-DOMAIN-SUFFIX,mon.snssdk.com,REJECT
-DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
-DOMAIN-SUFFIX,apm.snssdk.com,REJECT
-DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
-DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+# DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+# DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+# DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+# DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+# DOMAIN-SUFFIX,dig.bdurl.net,REJECT
 
 # ---------- 档位 C：有风险，默认注释掉 ----------
 # log.snssdk.com 是 AppLog 主通道，部分版本的登录/风控也复用；
