@@ -31,11 +31,11 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,oceanengine.com,REJECT
 
 # ---------- 档位 B：埋点与监控（安全，只是少上报） ----------
-DOMAIN-SUFFIX,mon.snssdk.com,REJECT
-DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
-DOMAIN-SUFFIX,apm.snssdk.com,REJECT
-DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
-DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+# DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+# DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+# DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+# DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+# DOMAIN-SUFFIX,dig.bdurl.net,REJECT
 
 # ---------- 档位 C：有风险，默认注释掉 ----------
 # log.snssdk.com 是 AppLog 主通道，部分版本的登录/风控也复用；
@@ -76,5 +76,4 @@ fanqie-filter = type=http-response,pattern=^https?://(?:api\d*-normal-[a-z0-9]+\
 
 [MITM]
 # 只对接口域名做 MITM，不碰图片/CDN，省电省流量
-# hostname = %INSERT% -mssdk.zijieapi.com, -*.zijieapi.com, -zijieapi.com, api*-normal-*.fqnovel.com, api.fqnovel.com, reading.snssdk.com
-hostname = %INSERT% -fqnovel.com, -*.fqnovel.com, -zijieapi.com, -*.zijieapi.com, reading.snssdk.com
+hostname = %INSERT% -mssdk.zijieapi.com, -*.zijieapi.com, -zijieapi.com, api*-normal-*.fqnovel.com, api.fqnovel.com, reading.snssdk.com
