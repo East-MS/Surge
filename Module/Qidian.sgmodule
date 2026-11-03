@@ -1,0 +1,73 @@
+#!name=起点读书去广告
+#!desc=清理起点开屏、导读、弹窗、悬浮广告和页面推广
+#!author=ForestofTime
+#!date=2026-03-24
+#!category=App优化增强
+#!system=ios
+
+[Script]
+# 修复后的脚本 - 增强 iOS 兼容性
+# 包含：开屏、deeplink、每日导读、tab广告、悬浮广告、getconf清理、我的页面、toolbar
+qidian-merged-fixed = type=http-response,pattern=^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/(deeplink\/geturl|dailyrecommend\/getdailyrecommend)|v1\/(client\/getconf|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab|assembly\/toolbar)|v3\/user\/getaccountpage|v1\/bookshelf\/(refresh|getBookshelf)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/qidian_getconf_filter_fixed.js
+# 兜底：强制隐藏每日导读/签到卡片（即使本地缓存）
+qidian-hide-daily = type=http-response,pattern=^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v1\/client\/getconf|v1\/bookshelf\/refresh|v2\/checkin\/simpleinfo|v1\/dailyrecommend\/getdailyrecommend|v2\/dailyrecommend\/getdailyrecommend),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/qidian_hide_daily.js
+
+[Map Local]
+# 开屏（兜底）
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v4\/client\/getsplashscreen\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# v1/adv/ 广告接口（兜底）
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# iOS 广告聚合
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/iosad data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# AB/实验
+^https:\/\/ywab\.reader\.qq\.com\/user\/experiments\/v2\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 签到信息（可能影响签到展示，介意可自行注释）
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/checkin\/simpleinfo\? data-type=text data="{\"Code\":0,\"Message\":\"\",\"Data\":{\"IsHidden\":1,\"HasCheckIn\":1}}" status-code=200 header="Content-Type:application/json"
+# 新签到（bookshelf 每日导读入口）
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v2\/checkin\/simpleinfo\? data-type=text data="{\"Code\":0,\"Message\":\"\",\"Data\":{\"IsHidden\":1,\"HasCheckIn\":1,\"BtnType\":0,\"BtnTypeV2\":0,\"BtnTypeTxt\":\"\",\"BtnTypeTxtV2\":\"\",\"ActionUrl\":\"\",\"BtnUnCheckInTxt\":\"\",\"BtnAlreadyCheckInTxt\":\"\",\"BtnCheckInOverTxt\":\"\",\"BtnMemberAutoCheckInTxt\":\"\"}}" status-code=200 header="Content-Type:application/json"
+
+# 弹窗/对话框
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/push\/getdialog\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 新手/浮层弹窗
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/freshman\/freshmanGuidePopup\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 推送消息列表
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/message\/getpushedmessagelist$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 运营条
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/maintain\/playstrip$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 书架「猜你喜欢」
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/dailyrecommend\/recommendBook\? data-type=text data="{\"Code\":0,\"Message\":\"\",\"Data\":{\"Items\":[]}}" status-code=200 header="Content-Type:application/json"
+
+# 新手书架按钮
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/freshman\/bookshelfbtn$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 书架置顶推广
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/getTopOperation$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 搜索热词
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/booksearch\/hotWords\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 章末模块（文末推广/推荐位）
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/followsubscribe\/showChapterEndModule\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 青少年模式配置
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 每日导读接口兜底（iOS 关键）
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v2\/dailyrecommend\/getdailyrecommend data-type=text data="{\"Code\":0,\"Message\":\"\",\"Data\":{\"Items\":[],\"IsHidden\":1}}" status-code=200 header="Content-Type:application/json"
+# 兼容旧版每日导读
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/dailyrecommend\/getdailyrecommend data-type=text data="{\"Code\":0,\"Message\":\"\",\"Data\":{\"Items\":[],\"IsHidden\":1}}" status-code=200 header="Content-Type:application/json"
+
+# 书架刷新接口兜底
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/refresh data-type=text data="{\"Data\":{}}" status-code=200 header="Content-Type:application/json"
+
+# 每日导读卡片背景图（透明占位）
+^https:\/\/qdclient-resources-1252317822\.image\.myqcloud\.com\/images\/checkin\/.*\.png data-type=text data="" status-code=200 header="Content-Type:image/png"
+
+[MITM]
+hostname = %APPEND% magev6.if.qidian.com, ywab.reader.qq.com, qdclient-resources-1252317822.image.myqcloud.com
