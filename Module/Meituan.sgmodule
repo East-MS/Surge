@@ -1,9 +1,9 @@
 #!name=美团去广告
-#!desc=清理美团开屏、品牌素材、启动推荐和营销推送。v1
-#!author=MeChenCC / fmz200 / ForestofTime Surge 原生整理
-#!category=AdBlock
-#!homepage=https://github.com/ForestofTime/Surge
+#!desc=清理美团开屏、品牌素材、启动推荐和营销推送
+#!author=ForestofTime
+#!category=App优化增强
 #!raw-url=https://raw.githubusercontent.com/ForestofTime/Surge/main/Module/MeituanAds.sgmodule
+#!system=ios
 
 [Rule]
 # 仅拒绝广告与上报专用域名。共享业务域名 d.meituan.net 保持直通。
@@ -28,7 +28,7 @@ DOMAIN-SUFFIX,dreport.meituan.net,REJECT
 
 [Script]
 # 最新 HAR 仅确认这两个营销推送开关，其他 Horn 业务配置原样保留。
-美团-营销推送 = type=http-response,pattern=^https:\/\/h\.meituan\.com\/horn_ios\/mergeRequest(?:\?.*)?$,script-path=https://raw.githubusercontent.com/ForestofTime/Surge/main/JS/MeituanAds.js?v=1,requires-body=true,max-size=1048576,timeout=10,engine=jsc
+美团-营销推送 = type=http-response,pattern=^https:\/\/h\.meituan\.com\/horn_ios\/mergeRequest(?:\?.*)?$,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/Meituan.js?v=1,requires-body=true,max-size=1048576,timeout=10,engine=jsc
 
 [MITM]
 hostname = %APPEND% wmapi.meituan.com, apimobile.meituan.com, s3plus.meituan.net, flowplus.meituan.net, img.meituan.net, h.meituan.com
