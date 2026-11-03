@@ -1,0 +1,51 @@
+#!name=番茄去广告 · 稳健优化版
+#!desc=精简广告域名拦截，删除重复、整域误拦和未确认的视频/IP拦截；排除已知冲突域名解密。默认不运行递归删字段脚本，不解密图片或视频 CDN。仍可能影响激励广告与奖励，未实机验证。
+#!system=ios
+#!category=App优化增强
+
+# 版本：2026-11-03
+# 原规则与远程脚本署名：taiji951906413；本次按提供的合并配置重新审核。
+# 仅启用本模块，停用旧的番茄/红果同类模块，避免旧规则继续误拦。
+# 以下是全局域名规则，并不限定只对番茄或红果生效。
+# 网络拦截不保证去掉广告占位，也不保证所有广告都消失。
+
+[Rule]
+# 广告 SDK / 素材平台：会同时影响相关激励广告及广告解锁。
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,oceanengine.com,REJECT
+DOMAIN-SUFFIX,pangle.io,REJECT
+
+# 阿里系广告平台及已列明的素材主机。
+# 具体主机使用 DOMAIN，避免扩大到其未知子域。
+DOMAIN-SUFFIX,tanx.com,REJECT
+DOMAIN-SUFFIX,alimama.com,REJECT
+DOMAIN,atanx.alicdn.com,REJECT
+DOMAIN,atanx2.alicdn.com,REJECT
+DOMAIN,simba.taobao.com,REJECT
+
+# 从共享图片域中只选取这两个已列明的广告素材主机。
+DOMAIN,p6-ad-sign.byteimg.com,REJECT
+DOMAIN,p9-ad-sign.byteimg.com,REJECT
+
+# B 档统计/监控：统一保持关闭，后文没有再次启用同名主机。
+# DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+# DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+# DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+# DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+# DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+# DOMAIN-SUFFIX,mmstat.com,REJECT
+# DOMAIN,adash.m.taobao.com,REJECT
+
+[Script]
+# 默认没有启用的响应脚本。原 JS 按广告标记递归删数组，存在误删和数字 ID 精度风险。
+# 以下仅供确认实际接口后测试：取消注释，并在下面 hostname 行末添加 reading.snssdk.com。
+# 先使用 MODE=log 确认结构与 TLS 兼容，再决定是否改成 MODE=filter。
+# 2 MiB 以上的响应跳过脚本、原样放行；MODE=log 不改写响应。
+# fanqie-filter = type=http-response,pattern=^https://reading\.snssdk\.com/,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/fanqie_ad_filter.js,requires-body=true,max-size=2097152,timeout=30,argument=MODE=log
+
+[MITM]
+# 只插入排除项，覆盖你已报告的 mssdk/applog/mon/log/小说 API 域名变体。
+# 不添加共享 CDN 或主 API 解密；排除不等于 REJECT，也不强制 DIRECT。
+hostname = %INSERT% -*.fqnovel.com, -*.zijieapi.com
