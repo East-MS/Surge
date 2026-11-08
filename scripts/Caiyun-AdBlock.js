@@ -10,7 +10,7 @@
   try {
     const url = String($request.url || "");
     const endpoint =
-      /^https:\/\/(api\.caiyunapp\.com|wrapper\.cyapi\.cn)\/v1\/activity\/?(?:\?|$)/i.exec(url);
+      /^https:\/\/(api\.caiyunapp\.com|cdn-w\.caiyunapp\.com|wrapper\.cyapi\.cn)\/v1\/activity\/?(?:\?|$)/i.exec(url);
 
     if (endpoint) {
       let obj = JSON.parse($response.body);
@@ -26,7 +26,7 @@
           }
 
           if (Array.isArray(obj.activities)) {
-            if (endpoint[1].toLowerCase() === "api.caiyunapp.com") {
+            if (endpoint[1].toLowerCase() !== "wrapper.cyapi.cn") {
               // 底栏控制项目：主页图标、天气助手、彩云 AI。
               for (const item of obj.activities) {
                 if (item && item.name && item.type && item.feature) {
