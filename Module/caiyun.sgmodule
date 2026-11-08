@@ -16,7 +16,7 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 (?i)^https://starplucker\.cyapi\.cn/v3/(config/cypage/\w+/conditions|notification/message_center|operation/homefeatures) data-type=text data="{}" status-code=200 header="Content-Type:application/json; charset=utf-8"
 
 [Script]
-Caiyun-AdBlock = type=http-response,pattern=(?i)^https://(wrapper\.cyapi\.cn|api\.caiyunapp\.com)/v1/activity/?(\?|$),requires-body=true,max-size=1048576,timeout=10,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/Caiyun-AdBlock.js
+Caiyun-AdBlock = type=http-response,pattern=(?i)^https://(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)/v1/activity/?(\?|$),requires-body=true,max-size=1048576,timeout=10,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/Caiyun-AdBlock.js
 
 [MITM]
 hostname = %APPEND% biz.cyapi.cn, starplucker.cyapi.cn, api.caiyunapp.com, cdn-w.caiyunapp.com, wrapper.cyapi.cn
