@@ -8,11 +8,11 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,oceanengine.com,REJECT
-DOMAIN-SUFFIX,mon.snssdk.com,REJECT
-DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
-DOMAIN-SUFFIX,apm.snssdk.com,REJECT
-DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
-DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+# DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+# DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+# DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+# DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+# DOMAIN-SUFFIX,dig.bdurl.net,REJECT
 DOMAIN-SUFFIX,tanx.com,REJECT
 DOMAIN-SUFFIX,alimama.com,REJECT
 DOMAIN-SUFFIX,mmstat.com,REJECT
