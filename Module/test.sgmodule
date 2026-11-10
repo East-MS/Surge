@@ -1,0 +1,29 @@
+#!name=番茄系去广告·远程版（番茄小说/畅听/红果）
+#!desc=拦截穿山甲广告 SDK、阿里系 Tanx/阿里妈妈广告联盟与埋点域名；信息流广告由远程 js 改写响应剔除。手机粘贴地址即可导入，无需电脑，也无需改脚本。
+#!system=ios
+#!date=2026-10-31 21:50
+
+[Rule]
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,oceanengine.com,REJECT
+DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+DOMAIN-SUFFIX,tanx.com,REJECT
+DOMAIN-SUFFIX,alimama.com,REJECT
+DOMAIN-SUFFIX,mmstat.com,REJECT
+DOMAIN-SUFFIX,atanx.alicdn.com,REJECT
+DOMAIN-SUFFIX,atanx2.alicdn.com,REJECT
+DOMAIN-SUFFIX,simba.taobao.com,REJECT
+DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
+DOMAIN-SUFFIX,pangle.io,REJECT
+
+[Script]
+fanqie_ad_filter = type=http-response, pattern=^https?://(?:api\d*-normal-[a-z0-9]+\.fqnovel\.com|api\.fqnovel\.com|reading\.snssdk\.com|imapi-oth\.zijieapi\.com)/, script-path=https://raw.githubusercontent.com/taiji951906413/loon-resource/refs/heads/main/Script/fanqie_ad_filter.js, requires-body=true, max-size=0, timeout=30
+
+[MITM]
+hostname = %APPEND% *.fqnovel.com, *.snssdk.com, *.zijieapi.com
