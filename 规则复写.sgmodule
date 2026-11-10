@@ -1,5 +1,7 @@
 #!name=规则复写
-#!desc=东子
+#!desc=去除app广告
+#!system=ios
+#!category=App优化增强
 
 [URL Rewrite]
 # Nobyda规则
