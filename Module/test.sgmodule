@@ -14,11 +14,11 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,oceanengine.com,REJECT
 
 # ---------- 档位 B：埋点与监控（只是少上报） ----------
-DOMAIN-SUFFIX,mon.snssdk.com,REJECT
-DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
-DOMAIN-SUFFIX,apm.snssdk.com,REJECT
-DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
-DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+# DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+# DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+# DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+# DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+# DOMAIN-SUFFIX,dig.bdurl.net,REJECT
 
 # ---------- 档位 C：有风险，默认注释 ----------
 # log.snssdk.com 是 AppLog 主通道，部分版本的登录/风控也复用；
@@ -27,16 +27,16 @@ DOMAIN-SUFFIX,dig.bdurl.net,REJECT
 # DOMAIN-SUFFIX,gurd.snssdk.com,REJECT
 
 # ---------- 档位 D：阿里系广告联盟 Tanx / 阿里妈妈 ----------
-DOMAIN-SUFFIX,tanx.com,REJECT
-DOMAIN-SUFFIX,alimama.com,REJECT
-DOMAIN-SUFFIX,mmstat.com,REJECT
-DOMAIN-SUFFIX,atanx.alicdn.com,REJECT
-DOMAIN-SUFFIX,atanx2.alicdn.com,REJECT
-DOMAIN-SUFFIX,simba.taobao.com,REJECT
-DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,tanx.com,REJECT
+# DOMAIN-SUFFIX,alimama.com,REJECT
+# DOMAIN-SUFFIX,mmstat.com,REJECT
+# DOMAIN-SUFFIX,atanx.alicdn.com,REJECT
+# DOMAIN-SUFFIX,atanx2.alicdn.com,REJECT
+# DOMAIN-SUFFIX,simba.taobao.com,REJECT
+# DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
 
 # 穿山甲国际版 SDK 域名（保守起见也拦）
-DOMAIN-SUFFIX,pangle.io,REJECT
+# DOMAIN-SUFFIX,pangle.io,REJECT
 
 # 注意：不要 REJECT 以下域名，否则 App 不可用
 #   api5-normal-sinfonlinea.fqnovel.com / api.fqnovel.com（主 API）
