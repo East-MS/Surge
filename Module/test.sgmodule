@@ -1,18 +1,32 @@
-#!name=番茄系去广告·远程版（番茄小说/畅听/红果）
-#!desc=拦截穿山甲广告 SDK、阿里系 Tanx/阿里妈妈广告联盟与埋点域名；信息流广告由远程 js 改写响应剔除。手机粘贴地址即可导入，无需电脑，也无需改脚本。
-#!system=ios
-#!date=2026-10-31 21:50
+#!name=番茄系去广告（番茄小说/畅听/红果）
+#!desc=拦截穿山甲广告 SDK、阿里系 Tanx/阿里妈妈广告联盟与埋点域名；信息流广告由远程脚本改写响应剔除
+#!category=去广告
+
+# 使用前：Surge 需已安装并信任 MITM 证书，且开启 MITM 与脚本功能。
+# 建议先只保留档位 A 跑两天，确认不影响功能后再逐步启用其余档位。
 
 [Rule]
+
+# ---------- 档位 A：穿山甲 / 巨量引擎广告 SDK（开屏、激励视频、Banner） ----------
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,oceanengine.com,REJECT
-# DOMAIN-SUFFIX,mon.snssdk.com,REJECT
-# DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
-# DOMAIN-SUFFIX,apm.snssdk.com,REJECT
-# DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
-# DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+
+# ---------- 档位 B：埋点与监控（只是少上报） ----------
+DOMAIN-SUFFIX,mon.snssdk.com,REJECT
+DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+DOMAIN-SUFFIX,apm.snssdk.com,REJECT
+DOMAIN-SUFFIX,toblog.snssdk.com,REJECT
+DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+
+# ---------- 档位 C：有风险，默认注释 ----------
+# log.snssdk.com 是 AppLog 主通道，部分版本的登录/风控也复用；
+# gurd.snssdk.com 是设备注册，拦了可能触发"环境异常"。
+# DOMAIN-SUFFIX,log.snssdk.com,REJECT
+# DOMAIN-SUFFIX,gurd.snssdk.com,REJECT
+
+# ---------- 档位 D：阿里系广告联盟 Tanx / 阿里妈妈 ----------
 DOMAIN-SUFFIX,tanx.com,REJECT
 DOMAIN-SUFFIX,alimama.com,REJECT
 DOMAIN-SUFFIX,mmstat.com,REJECT
@@ -20,10 +34,22 @@ DOMAIN-SUFFIX,atanx.alicdn.com,REJECT
 DOMAIN-SUFFIX,atanx2.alicdn.com,REJECT
 DOMAIN-SUFFIX,simba.taobao.com,REJECT
 DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
+
+# 穿山甲国际版 SDK 域名（保守起见也拦）
 DOMAIN-SUFFIX,pangle.io,REJECT
 
+# 注意：不要 REJECT 以下域名，否则 App 不可用
+#   api5-normal-sinfonlinea.fqnovel.com / api.fqnovel.com（主 API）
+#   reading.snssdk.com（H5 页面/接口）
+#   lf3-reading.fqnovelpic.com（封面/插图 CDN）
+#   alicdn.com / aliyuncs.com 整域（只能拦 atanx* 子域）
+
 [Script]
-fanqie_ad_filter = type=http-response, pattern=^https?://(?:api\d*-normal-[a-z0-9]+\.fqnovel\.com|api\.fqnovel\.com|reading\.snssdk\.com|imapi-oth\.zijieapi\.com)/, script-path=https://raw.githubusercontent.com/taiji951906413/loon-resource/refs/heads/main/Script/fanqie_ad_filter.js, requires-body=true, max-size=0, timeout=30
+
+# 信息流广告过滤 + 结构日志（默认模式 filter，无需额外参数）
+# 临时关闭过滤：在本行末尾加 ,argument=MODE=off
+# 只打日志不改内容：加 ,argument=MODE=log
+fanqie_ad_filter = type=http-response,pattern=^https?://(?:api\d*-normal-[a-z0-9]+\.fqnovel\.com|api\.fqnovel\.com|reading\.snssdk\.com|imapi-oth\.zijieapi\.com)/,script-path=https://raw.githubusercontent.com/taiji951906413/loon-resource/refs/heads/main/Script/fanqie_ad_filter.js,requires-body=true,max-size=0,timeout=30
 
 [MITM]
 hostname = %APPEND% *.fqnovel.com, *.snssdk.com, *.zijieapi.com
