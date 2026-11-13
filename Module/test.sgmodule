@@ -52,4 +52,4 @@ DOMAIN-SUFFIX,oceanengine.com,REJECT
 fanqie_ad_filter = type=http-response,pattern=^https?://(?:api\d*-normal-[a-z0-9]+\.fqnovel\.com|api\.fqnovel\.com|reading\.snssdk\.com|imapi-oth\.zijieapi\.com)/,script-path=https://raw.githubusercontent.com/taiji951906413/loon-resource/refs/heads/main/Script/fanqie_ad_filter.js,requires-body=true,max-size=0,timeout=30
 
 [MITM]
-hostname = %APPEND% *.fqnovel.com, *.snssdk.com, *.zijieapi.com
+hostname = %INSERT% -*.fqnovel.com, -*.zijieapi.com, -*.snssdk.com
