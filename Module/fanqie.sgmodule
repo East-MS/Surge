@@ -1,10 +1,8 @@
 #!name=番茄去广告
 #!desc=去除开屏、章末和翻页插屏
-#!author=anpplex
 #!system=ios
 #!category=App优化增强
 #!icon=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Icon/App/fanqie.png
-#!date=2026-10-23
 
 [Rule]
 DOMAIN,zlink.ugsdk.cn,REJECT,extended-matching,pre-matching
@@ -105,4 +103,3 @@ URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image,REJECT
 
 [MITM]
 hostname = %APPEND% *.pangolin-sdk-toutiao, *.pangolin-sdk-toutiao.*, *.pstatp.com, *.pstatp.com.*, *.pglstatp-toutiao.com.*, *.pglstatp-toutiao.com, gurd.snssdk.com, gurd.snssdk.com.*, *default.ixigua.com, adim.pinduoduo.com, *.fqnovelvod.com, *.pangolin-sdk-toutiao-b.com, lf-cdn-tos.bytescm.com, tnc3-alisc1.zijieapi.com, *reading-ad.qznovelvod.com
-
