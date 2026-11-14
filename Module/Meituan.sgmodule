@@ -1,34 +1,77 @@
 #!name=美团去广告
-#!desc=清理美团开屏、品牌素材、启动推荐和营销推送
-#!author=ForestofTime
+#!desc=美团12.67.403:屏蔽 shark/HTTPDNS 等域名,精简首页底栏、推荐流、搜索热词、购物车横幅和开屏图
+#!author=TG@ZenMoFiShi
 #!category=App优化增强
-#!raw-url=https://raw.githubusercontent.com/ForestofTime/Surge/main/Module/MeituanAds.sgmodule
+#!raw-url=https://github.com/muktsoen/SurgeRules/blob/main/MT.sgmodule
 #!system=ios
 
 [Rule]
-# 仅拒绝广告与上报专用域名。共享业务域名 d.meituan.net 保持直通。
-DOMAIN-SUFFIX,analytics.meituan.net,REJECT
-DOMAIN-SUFFIX,report.meituan.com,REJECT
-DOMAIN-SUFFIX,wmlog.meituan.com,REJECT
-DOMAIN-SUFFIX,ad.e.waimai.sankuai.com,REJECT
-DOMAIN-SUFFIX,mads.meituan.com,REJECT
-DOMAIN-SUFFIX,dreport.meituan.net,REJECT
+# ---- 域名 ----
+DOMAIN,shark-mt.meituan.com,REJECT
+DOMAIN,shark-default.meituan.com,REJECT
+DOMAIN,shark-dp.meituan.com,REJECT
+DOMAIN,shark-ps.meituan.com,REJECT
+DOMAIN,shark-wm.sankuai.com,REJECT
+DOMAIN,shark.dianping.com,REJECT
+DOMAIN-WILDCARD,mquic-*.meituan.com,REJECT
+DOMAIN,httpdnsmultiapi.meituan.com,REJECT
+DOMAIN,httpdnsmultiapivip.meituan.com,REJECT
+DOMAIN,httpdns.meituan.com,REJECT
+DOMAIN,httpdnsvip.meituan.com,REJECT
+DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT
+DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT
 
-[Map Local]
-# 开屏配置与启动推荐返回成功空 JSON，避免连接失败触发旧缓存。
-^https?:\/\/wmapi\.meituan\.com\/api\/v7\/(?:loadInfo|openscreen|startpicture)(?:\?.*)?$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https?:\/\/apimobile\.meituan\.com\/group\/v4\/recommend\/home\/startPageChannel(?:\?.*)?$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# ---- IPv4 ----
+IP-CIDR,202.90.108.13/32,REJECT,no-resolve
+IP-CIDR,202.90.110.46/32,REJECT,no-resolve
+IP-CIDR,202.90.108.69/32,REJECT,no-resolve
+IP-CIDR,202.90.110.45/32,REJECT,no-resolve
+IP-CIDR,202.90.108.68/32,REJECT,no-resolve
+IP-CIDR,202.90.110.48/32,REJECT,no-resolve
+IP-CIDR,202.90.108.67/32,REJECT,no-resolve
+IP-CIDR,202.90.110.36/32,REJECT,no-resolve
+IP-CIDR,202.90.108.54/32,REJECT,no-resolve
+IP-CIDR,202.90.108.55/32,REJECT,no-resolve
+IP-CIDR,203.76.217.51/32,REJECT,no-resolve
+IP-CIDR,203.76.217.53/32,REJECT,no-resolve
+IP-CIDR,203.76.217.241/32,REJECT,no-resolve
+IP-CIDR,203.76.217.243/32,REJECT,no-resolve
+IP-CIDR,103.202.146.30/32,REJECT,no-resolve
+IP-CIDR,103.202.146.49/32,REJECT,no-resolve
+IP-CIDR,101.50.8.64/32,REJECT,no-resolve
+IP-CIDR,103.63.160.64/32,REJECT,no-resolve
+IP-CIDR,103.63.160.69/32,REJECT,no-resolve
+IP-CIDR,103.37.155.77/32,REJECT,no-resolve
+IP-CIDR,103.37.155.60/32,REJECT,no-resolve
+IP-CIDR,111.230.0.200/32,REJECT,no-resolve
+IP-CIDR,139.9.47.231/32,REJECT,no-resolve
+IP-CIDR,121.37.4.167/32,REJECT,no-resolve
+IP-CIDR,119.29.126.219/32,REJECT,no-resolve
+IP-CIDR,106.55.217.56/32,REJECT,no-resolve
+IP-CIDR,103.37.152.224/32,REJECT,no-resolve
+IP-CIDR,119.29.48.215/32,REJECT,no-resolve
+IP-CIDR,42.193.128.160/32,REJECT,no-resolve
 
-# 只处理社区方案中名称明确的广告素材，不拦截 p0/p1 等共享商品图片域名。
-^https?:\/\/(?:s3plus|flowplus)\.meituan\.net\/v\d+\/\w+\/linglong\/\w+\.(?:gif|jpe?g|mp4)(?:\?.*)?$ data-type=tiny-gif status-code=200
-^https?:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg(?:\?.*)?$ data-type=tiny-gif status-code=200
-^https?:\/\/img\.meituan\.net\/goodsawardpic\/[a-f0-9]+\.png\.webp(?:\?.*)?$ data-type=tiny-gif status-code=200
-^https?:\/\/s3plus\.meituan\.net\/ocean-blk-index\/index\/blk_conf_73\.json(?:\?.*)?$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-^https?:\/\/s3plus\.meituan\.net\/v1\/mss_28529f45d4404eee93c6fa2279ce2ca0\/(?:brandcpt-vedio|waimai-alita)\/[^?]+\.zip(?:\?.*)?$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# ---- IPv6 ----
+IP-CIDR6,2405:1480:3000:303b::303b/128,REJECT,no-resolve
+IP-CIDR6,2405:1480:1000:3::1e/128,REJECT,no-resolve
+IP-CIDR6,2405:1480:1000:4::15/128,REJECT,no-resolve
+IP-CIDR6,2402:4e00:40:40::2:373/128,REJECT,no-resolve
+
+[URL Rewrite]
+^https?:\/\/(httpdns|httpdnsvip|httpdnsmultiapi|httpdnsmultiapivip)\.meituan\.com\/ - reject
+^http:\/\/103\.37\.155\.60\/fetch - reject
 
 [Script]
-# 最新 HAR 仅确认这两个营销推送开关，其他 Horn 业务配置原样保留。
-美团-营销推送 = type=http-response,pattern=^https:\/\/h\.meituan\.com\/horn_ios\/mergeRequest(?:\?.*)?$,script-path=https://raw.githubusercontent.com/East-MS/Surge/refs/heads/master/scripts/Meituan.js?v=1,requires-body=true,max-size=1048576,timeout=10,engine=jsc
+# 以下 8 条共用同一个脚本 MT.js,按 URL 分别处理
+美团-首页底栏 = type=http-response,pattern=^https?:\/\/apimobile\.meituan\.com\/aggroup\/indexTab,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+美团-推荐流 = type=http-response,pattern=^https?:\/\/feedguess\.meituan\.com\/lycoris\/scene\/(gwc_feed1_2265|personalcenter_2154)(\?|$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+美团-我的页面 = type=http-response,pattern=^https?:\/\/mt-personalcenter\.meituan\.com\/usercenter\/display,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+美团-搜索默认词 = type=http-response,pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/defaultword,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+美团-搜索热词 = type=http-response,pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/hotword\/city\/divide\/hotrecommend\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+美团-AI助手配置 = type=http-response,pattern=^https?:\/\/assistify\.meituan\.com\/assistant\/getAppClientHornConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+美团-购物车横幅 = type=http-response,pattern=^https?:\/\/mop\.meituan\.com\/mop\/entry\/shoppingCartEntry,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+美团-开屏图 = type=http-response,pattern=^https?:\/\/mop\.meituan\.com\/api\/entryModule\/startupPicture,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
 
 [MITM]
-hostname = %APPEND% wmapi.meituan.com, apimobile.meituan.com, s3plus.meituan.net, flowplus.meituan.net, img.meituan.net, h.meituan.com
+hostname = %APPEND% apimobile.meituan.com, feedguess.meituan.com, mop.meituan.com, mt-personalcenter.meituan.com, assistify.meituan.com, httpdns.meituan.com, httpdnsmultiapi.meituan.com
