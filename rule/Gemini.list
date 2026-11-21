@@ -1,0 +1,34 @@
+# 服务商：Gemini · 客户端：Surge · 模式：独立规则集（不含策略名）
+# 提示：请将本段置于 cloudflare.com、通用国际规则与 FINAL/MATCH 之前
+ 
+# 关键上游依赖（防 IP 不一致 · 请置于 cloudflare.com / 通用规则之前）
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,clients6.google.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,withgoogle.com
+DOMAIN-SUFFIX,google.dev
+ 
+# Gemini 核心域名
+DOMAIN-KEYWORD,gemini
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN,gemini.google.com
+DOMAIN,ai.google.dev
+DOMAIN,aistudio.google.com
+DOMAIN,makersuite.google.com
+DOMAIN,bard.google.com
+DOMAIN,notebooklm.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,aida.googleapis.com
+DOMAIN,geller-pa.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+ 
+# 出口 IP 自查（配合水獭 /check 实测规则是否生效）
+DOMAIN,claude-check.shuita.xyz
+DOMAIN,api.ipify.org
+DOMAIN,ipify.org
+DOMAIN-SUFFIX,ip.sb
